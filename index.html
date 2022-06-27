@@ -87,7 +87,7 @@ MathJax.Hub.Config({
 <p><br /></p>
 <h1>Chengrun Yang</h1>
 <table class="imgtable"><tr><td>
-<img src="/_images/chengrun_yang_night.jpg" alt="Chengrun Yang" width="160px" />&nbsp;</td>
+<img src="./_images/chengrun_yang_night.JPG" alt="Chengrun Yang" width="160px" />&nbsp;</td>
 <td align="left"><p>Research Scientist
 <br /> Google Brain, AutoML team
 <br />Mountain View, California, USA
@@ -242,14 +242,14 @@ Preliminary version at NeurIPS 2018 Workshop on Meta-Learning <br />
 </ul>
 <h3>Preprints and Workshops</h3>
 <ul>
-<li><p><b> Resource-Constrained Neural Architecture Search on Tabular Datasets</b> <br />
+<li><p><b> TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets</b> <br />
 Chengrun Yang, Gabriel Bender,  <a href="https://quark0.github.io/" target=&ldquo;blank&rdquo;> Hanxiao Liu</a>, Pieter-Jan Kindermans, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine Udell</a>, Yifeng Lu,  <a href="https://cs.stanford.edu/~quocle/" target=&ldquo;blank&rdquo;> Quoc Le</a>, Da Huang <br />
  2022 <br />
 [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2204.07615" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
-<div class="abstract">The best neural architecture for a given machine learning problem depends on many factors: not only the complexity and structure of the dataset, but also on resource constraints including latency, compute, energy consumption, etc. Neural architecture search (NAS) for tabular datasets is an important but under-explored problem. Previous NAS algorithms designed for image search spaces incorporate resource constraints directly into the reinforcement learning rewards. In this paper, we argue that search spaces for tabular NAS pose considerable challenges for these existing reward-shaping methods, and propose a new reinforcement learning (RL) controller to address these challenges. Motivated by rejection sampling, when we sample candidate architectures during a search, we immediately discard any architecture that violates our resource constraints. We use a Monte-Carlo-based correction to our RL policy gradient update to account for this extra filtering step. Results on several tabular datasets show TabNAS, the proposed approach, efficiently finds high-quality models that satisfy the given resource constraints.</div>
+<div class="abstract">The best neural architecture for a given machine learning problem depends on many factors: not only the complexity and structure of the dataset, but also on resource constraints including latency, compute, energy consumption, etc. Neural architecture search (NAS) for tabular datasets is an important but under-explored problem. Previous NAS algorithms designed for image search spaces incorporate resource constraints directly into the reinforcement learning (RL) rewards. However, for NAS on tabular datasets, this protocol often discovers suboptimal architectures. This paper develops TabNAS, a new and more effective approach to handle resource constraints in tabular NAS using an RL controller motivated by the idea of rejection sampling. TabNAS immediately discards any architecture that violates the resource constraints without training or learning from that architecture. TabNAS uses a Monte-Carlo-based correction to the RL policy gradient update to account for this extra filtering step. Results on several tabular datasets demonstrate the superiority of TabNAS over previous reward-shaping methods: it finds better models that obey the constraints.</div>
 <div class="bib">
-@article{yang2022resource,<br />
-  title={Resource-Constrained Neural Architecture Search on Tabular Datasets},<br />
+@article{yang2022tabnas,<br />
+  title={TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets},<br />
   author={Yang, Chengrun and Bender, Gabriel and Liu, Hanxiao and Kindermans, Pieter-Jan and Udell, Madeleine and Lu, Yifeng and Le, Quoc and Huang, Da},<br />
   journal={arXiv preprint arXiv:2204.07615},<br />
   year={2022}<br />
@@ -303,16 +303,16 @@ Chengrun Yang, <a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;
 <li><p>Journals: Transactions on Machine Learning Research (TMLR), TPAMI Special Issue on AutoML<br /></p>
 </ul>
 
-<h2>Teaching</h2>
+<h2>Teaching (at Cornell)</h2>
 <ul>
-<li><p>Cornell <a href="https://people.orie.cornell.edu/mru8/orie4741/" target=&ldquo;blank&rdquo;>ORIE 4741</a> (Fall 2017, Fall 2019, Fall 2020): Learning with Big Messy Data (Teaching assistant)<br /></p>
+<li><p><a href="https://people.orie.cornell.edu/mru8/orie4741/" target=&ldquo;blank&rdquo;>ORIE 4741</a> (Fall 2017, Fall 2019, Fall 2020): Learning with Big Messy Data (Teaching assistant)<br /></p>
 </li>
-<li><p>Cornell ECE 4250 (Spring 2017): Digital Signal and Image Processing (Teaching assistant)<br /></p>
+<li><p>ECE 4250 (Spring 2017): Digital Signal and Image Processing (Teaching assistant)<br /></p>
 </li>
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2022-05-03, thanks to <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a> and a template from <a href="https://www.cs.cornell.edu/~cdesa/" target="blank">Chris De Sa</a>.
+Page generated 2022-06-27, thanks to <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a> and a template from <a href="https://www.cs.cornell.edu/~cdesa/" target="blank">Chris De Sa</a>.
 </div>
 </div>
 </div>
