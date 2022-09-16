@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Chengrun Yang</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+<script type="text/javascript">
+
+      function toggle_abstract(elem) {
+        var as = elem.parentNode.parentNode.getElementsByClassName("abstract");
+        if (as.length > 0) {
+          var a = as[0];
+          a.className = "abstract-show"
+        }
+        else {
+          as = elem.parentNode.parentNode.getElementsByClassName("abstract-show");
+          var a = as[0];
+          a.className = "abstract"
+        }
+      }
+
+      function toggle_bib(elem) {
+        var as = elem.parentNode.parentNode.getElementsByClassName("bib");
+        if (as.length > 0) {
+          var a = as[0];
+          a.className = "bib-show"
+        }
+        else {
+          as = elem.parentNode.parentNode.getElementsByClassName("bib-show");
+          var a = as[0];
+          a.className = "bib"
+        }
+      }
+
+      function show_all_abstracts() {
+        var as = [...document.getElementsByClassName("abstract")];
+        for (i = 0; i < as.length; i+=1) {
+          var a = as[i];
+          a.className = "abstract-show";
+        }
+      }
+
+      function hide_all_abstracts() {
+        var as = [...document.getElementsByClassName("abstract-show")];
+        for (i = 0; i < as.length; i+=1) {
+          var a = as[i];
+          a.className = "abstract";
+        }
+      }
+
+</script>
+<style>
+      .abstract {
+        display: none;
+      }
+      .abstract-show {
+        margin: 10px;
+        padding: 7px;
+        border: 1px dotted #A09040;
+        text-align: justify;
+      }
+      .bib {
+        display: none;
+      }
+      .bib-show {
+        margin: 10px;
+        padding: 7px;
+        border: 1px dotted #A09040;
+        text-align: justify;
+      }
+</style>
+
+</head>
+<body>
+<div id="layout-content">
+<p><br /></p>
+<h1>Chengrun Yang</h1>
+<table class="imgtable"><tr><td>
+<img src="images/chengrun_yang_night.JPG" alt="Chengrun Yang" width="160px" />&nbsp;</td>
+<td align="left"><p>Research Scientist
+<br /> Google Brain, AutoML team
+<br />Mountain View, California, USA
+
+<br /><br /> Contact: chengrunyang at gmail dot com
+<br /> <b><a href="https://github.com/chengrunyang" target=&ldquo;blank&rdquo;>GitHub</a></b> | <b><a href="https://www.linkedin.com/in/chengrun-yang/" target=&ldquo;blank&rdquo;>LinkedIn</a></b>
+</p>
+</td></tr></table>
+<h2>About Me</h2>
+<p>I am a research scientist in the AutoML team at <b><a href="https://research.google/teams/brain/" target=&ldquo;blank&rdquo;>Google Brain</a></b>. I obtained my Ph.D. in the <b><a href="https://ece.cornell.edu" target=&ldquo;blank&rdquo;>School of Electrical and Computer Engineering</a></b> at <b><a href="https://www.cornell.edu" target=&ldquo;blank&rdquo;>Cornell University</a></b> in May 2022, where I was advised by Prof. <b><a href="https://web.stanford.edu/~udell/" target=&ldquo;blank&rdquo;>Madeleine Udell</a></b> and had Prof. <b><a href="http://www.cs.cornell.edu/people/tj/" target=&ldquo;blank&rdquo;>Thorsten Joachims</a></b> and Prof. <b><a href="https://www.cs.cornell.edu/~kilian/" target=&ldquo;blank&rdquo;>Kilian Q. Weinberger</a></b> on my committee. From Summer 2021 to Spring 2022, I was a student researcher at Google Brain. I received a B.S. degree in physics from <b><a href="https://www.fudan.edu.cn/en/main.psp" target=&ldquo;blank&rdquo;>Fudan University</a></b> in 2016.</p>
+<p>My research interest lies broadly in optimization methods for machine learning. My <b><a href="_papers/chengrun_phd_thesis.pdf" target=&ldquo;blank&rdquo;>Ph.D. thesis</a></b> focuses on automated machine learning (AutoML) under resource constraints: how to find better models with limited resources in time, compute, and memory? I target this problem from the perspective of constrained optimization. Examples of my tools include low-rank matrix and tensor decomposition, experiment design, statistical sampling, and reinforcement learning. With this view, I have a continuing interest in the interplay between machine learning tasks and constrained optimization approaches: which part of the real problem is the most expensive, and how optimization tools can make it cheaper.</p>
+<h2>Papers</h2>
+<p><a href="javascript:void(0)" onclick="show_all_abstracts()">Show All Abstracts</a> &mdash; <a href="javascript:void(0)" onclick="hide_all_abstracts()">Hide All Abstracts</a></p>
+<h3>Conferences and Journals</h3>
+<ul>
+<li><p><b> TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets</b> <br />
+Chengrun Yang, Gabriel Bender,  <a href="https://quark0.github.io/" target=&ldquo;blank&rdquo;> Hanxiao Liu</a>, Pieter-Jan Kindermans, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine Udell</a>, Yifeng Lu,  <a href="https://cs.stanford.edu/~quocle/" target=&ldquo;blank&rdquo;> Quoc Le</a>, Da Huang <br />
+Neural Information Processing Systems (NeurIPS), 2022 <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2204.07615" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
+<div class="abstract">The best neural architecture for a given machine learning problem depends on many factors: not only the complexity and structure of the dataset, but also on resource constraints including latency, compute, energy consumption, etc. Neural architecture search (NAS) for tabular datasets is an important but under-explored problem. Previous NAS algorithms designed for image search spaces incorporate resource constraints directly into the reinforcement learning (RL) rewards. However, for NAS on tabular datasets, this protocol often discovers suboptimal architectures. This paper develops TabNAS, a new and more effective approach to handle resource constraints in tabular NAS using an RL controller motivated by the idea of rejection sampling. TabNAS immediately discards any architecture that violates the resource constraints without training or learning from that architecture. TabNAS uses a Monte-Carlo-based correction to the RL policy gradient update to account for this extra filtering step. Results on several tabular datasets demonstrate the superiority of TabNAS over previous reward-shaping methods: it finds better models that obey the constraints.</div>
+<div class="bib">
+@article{yang2022tabnas,<br />
+  title={TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets},<br />
+  author={Yang, Chengrun and Bender, Gabriel and Liu, Hanxiao and Kindermans, Pieter-Jan and Udell, Madeleine and Lu, Yifeng and Le, Quoc and Huang, Da},<br />
+  journal={arXiv preprint arXiv:2204.07615},<br />
+  year={2022}<br />
+}
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>How Low Can We Go: Trading Memory for Error in Low-Precision Training</b> <br />
+Chengrun Yang*, Ziyang Wu*, <a href="https://jerry-chee.github.io/" target=&ldquo;blank&rdquo;> Jerry Chee</a>, <a href="https://www.cs.cornell.edu/~cdesa/" target=&ldquo;blank&rdquo;> Christopher De Sa</a>, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
+ Udell</a><br />
+International Conference on Learning Representations (ICLR), 2022 <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2106.09686" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/chengrunyang/peppp" target=&ldquo;blank&rdquo;>code</a>] [<a href="https://people.ece.cornell.edu/cy/_posters/peppp_iclr22_poster.pdf" target=&ldquo;blank&rdquo;>poster</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br /> 
+<div class="abstract"> Low-precision arithmetic trains deep learning models using less energy, less
+memory and less time. However, we pay a price for the savings: lower precision
+may yield larger round-off error and hence larger prediction error. As
+applications proliferate, users must choose which precision to use to train a
+new model, and chip manufacturers must decide which precisions to manufacture.
+We view these precision choices as a hyperparameter tuning problem, and borrow
+ideas from meta-learning to learn the tradeoff between memory and error. In
+this paper, we introduce Pareto Estimation to Pick the Perfect Precision
+(PEPPP). We use matrix factorization to find non-dominated configurations (the
+Pareto frontier) with a limited number of network evaluations. For any given
+memory budget, the precision that minimizes error is a point on this frontier.
+Practitioners can use the frontier to trade memory for error and choose the
+best precision for their goals.</div>
+<div class="bib">
+@inproceedings{yang2022how,<br />
+title={How Low Can We Go: Trading Memory for Error in Low-Precision Training},<br />
+author={Chengrun Yang and Ziyang Wu and Jerry Chee and Christopher De Sa and Madeleine Udell},<br />
+booktitle={International Conference on Learning Representations},<br />
+year={2022},<br />
+url={https://openreview.net/forum?id=YpSxqy_RE84}<br />
+}
+</div>
+</p>
+*Equal contribution</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Robust Non-Linear Matrix Factorization for Dictionary Learning, Denoising, and Clustering</b> <br />
+<a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, Chengrun Yang, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
+ Udell</a> <br />
+IEEE Transactions on Signal Processing (TSP), 2021 <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2005.01317" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://ieeexplore.ieee.org/document/9366807" target=&ldquo;blank&rdquo;>IEEE</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
+<div class="abstract">Low dimensional nonlinear structure abounds in datasets across computer vision and machine learning. Kernelized matrix factorization techniques have recently been proposed to learn these nonlinear structures for denoising, classification, dictionary learning, and missing data imputation, by observing that the image of the matrix in a sufficiently large feature space is low-rank. However, these nonlinear methods fail in the presence of sparse noise or outliers. In this work, we propose a new robust nonlinear factorization method called Robust Non-Linear Matrix Factorization (RNLMF). RNLMF constructs a dictionary for the data space by factoring a kernelized feature space; a noisy matrix can then be decomposed as the sum of a sparse noise matrix and a clean data matrix that lies in a low dimensional nonlinear manifold. RNLMF is robust to sparse noise and outliers and scales to matrices with thousands of rows and columns. Empirically, RNLMF achieves noticeable improvements over baseline methods in denoising and clustering.</div>
+<div class="bib">
+@article{fan2020robust,<br />
+  author={Fan, Jicong and Yang, Chengrun and Udell, Madeleine},<br />
+  journal={IEEE Transactions on Signal Processing},<br />
+  title={Robust Non-Linear Matrix Factorization for Dictionary Learning, Denoising, and Clustering},<br />
+  year={2021},<br />
+  volume={69},<br />
+  number={},<br />
+  pages={1755-1770},<br />
+  doi={10.1109/TSP.2021.3062988}<br />
+}
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>TenIPS: Inverse Propensity Sampling for Tensor Completion</b> <br />
+Chengrun Yang, <a href="https://people.orie.cornell.edu/ld446/" target=&ldquo;blank&rdquo;> Lijun
+ Ding</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
+ Udell</a> <br />
+International Conference on Artificial Intelligence and Statistics (AISTATS), 2021 <br />
+Preliminary version at NeurIPS 2020 Workshop on Optimization for Machine Learning <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2101.00323" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/udellgroup/tenips" target=&ldquo;blank&rdquo;>code</a>] [<a href="https://people.ece.cornell.edu/cy/_posters/tenips_aistats21_poster.pdf" target=&ldquo;blank&rdquo;>poster</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
+<div class="abstract">Tensors are widely used to represent multiway arrays of data. The recovery of missing entries in a tensor has been extensively studied, generally under the assumption that entries are missing completely at random (MCAR). However, in most practical settings, observations are missing not at random (MNAR): the probability that a given entry is observed (also called the propensity) may depend on other entries in the tensor or even on the value of the missing entry. In this paper, we study the problem of completing a partially observed tensor with MNAR observations, without prior information about the propensities. To complete the tensor, we assume that both the original tensor and the tensor of propensities have low multilinear rank. The algorithm first estimates the propensities using a convex relaxation and then predicts missing values using a higher-order SVD approach, reweighting the observed tensor by the inverse propensities. We provide finite-sample error bounds on the resulting complete tensor. Numerical experiments demonstrate the effectiveness of our approach.</div>
+<div class="bib">
+@inproceedings{yang2021tenips,<br />
+  title={TenIPS: Inverse Propensity Sampling for Tensor Completion},<br />
+  author={Chengrun Yang and Lijun Ding and Ziyang Wu and Madeleine Udell},<br />
+  year={2021},<br />
+  eprint={2101.00323},<br />
+  archivePrefix={arXiv},<br />
+  primaryClass={stat.ML},<br />
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},<br />
+}
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>AutoML Pipeline Selection: Efficiently Navigating the Combinatorial Space</b> <br />
+Chengrun Yang, <a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
+ Udell </a> <br />
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2020 <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://people.ece.cornell.edu/cy/_papers/tensor_oboe.pdf" target=&ldquo;blank&rdquo;>pdf</a>] [<a href="https://github.com/udellgroup/oboe" target=&ldquo;blank&rdquo;>code</a>] [<a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403197" target=&ldquo;blank&rdquo;>ACM</a>] [<a href="https://people.ece.cornell.edu/cy/_papers/tensor_oboe_ACM_version_errata.pdf" target=&ldquo;blank&rdquo;><b>ACM version errata</b></a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br /> 
+<div class="abstract">Data scientists seeking a good supervised learning model on a dataset have many choices to make: they must preprocess the data, select features, possibly reduce the dimension, select an estimation algorithm, and choose hyperparameters for each of these pipeline components. With new pipeline components comes a combinatorial explosion in the number of choices! In this work, we design a new AutoML system TensorOboe to address this challenge: an automated system to design a supervised learning pipeline. TensorOboe uses low rank tensor decomposition as a surrogate model for efficient pipeline search. We also develop a new greedy experiment design protocol to gather information about a new dataset efficiently. Experiments on large corpora of real-world classification problems demonstrate the effectiveness of our approach.</div>
+<div class="bib">
+@inproceedings{yang2020automl,<br /> 
+  title={{AutoML} Pipeline Selection: Efficiently Navigating the Combinatorial Space},<br /> 
+  author={Yang, Chengrun and Fan, Jicong and Wu, Ziyang and Udell, Madeleine},<br /> 
+  booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},<br /> 
+  pages={1446--1456},<br /> 
+  year={2020}<br /> 
+}
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Spectral Frank-Wolfe Algorithm: Strict Complementarity and Linear Convergence</b> <br />
+<a href="https://people.orie.cornell.edu/ld446/" target=&ldquo;blank&rdquo;> Lijun
+ Ding</a>, <a href="https://people.orie.cornell.edu/yf275/" target=&ldquo;blank&rdquo;> Yingjie
+ Fei</a>, Qiantong Xu, Chengrun Yang <br />
+International Conference on Machine Learning (ICML), 2020 <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2006.01719" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="http://proceedings.mlr.press/v119/ding20a.html" target=&ldquo;blank&rdquo;>PMLR</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
+<div class="abstract">We develop a novel variant of the classical Frank-Wolfe algorithm, which we call spectral Frank-Wolfe, for convex optimization over a spectrahedron. The spectral Frank-Wolfe algorithm has a novel ingredient: it computes a few eigenvectors of the gradient and solves a small-scale SDP in each iteration. Such procedure overcomes slow convergence of the classical Frank-Wolfe algorithm due to ignoring eigenvalue coalescence. We demonstrate that strict complementarity of the optimization problem is key to proving linear convergence of various algorithms, such as the spectral Frank-Wolfe algorithm as well as the projected gradient method and its accelerated version.</div>
+<div class="bib">
+@inproceedings{ding2020spectral,<br />
+  title={Spectral Frank-Wolfe Algorithm: Strict Complementarity and Linear Convergence},<br />
+  author={Ding, Lijun and Fei, Yingjie and Xu, Qiantong and Yang, Chengrun},<br />
+  booktitle={International Conference on Machine Learning},<br />
+  pages={2535--2544},<br />
+  year={2020},<br />
+  organization={PMLR}<br />
+}
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b> OBOE: Collaborative Filtering for AutoML Model Selection</b> <br />
+Chengrun Yang, Yuji Akimoto, Dae Won Kim, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
+ Udell</a> <br />
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2019 <br />
+Oral Presentation <br />
+Preliminary version at NeurIPS 2018 Workshop on Meta-Learning <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://people.ece.cornell.edu/cy/_papers/oboe.pdf" target=&ldquo;blank&rdquo;>pdf</a>] [<a href="https://github.com/udellgroup/oboe" target=&ldquo;blank&rdquo;>code</a>] [<a href="https://arxiv.org/abs/1808.03233" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://dl.acm.org/doi/10.1145/3292500.3330909" target=&ldquo;blank&rdquo;>ACM</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
+<div class="abstract">Algorithm selection and hyperparameter tuning remain two of the most challenging tasks in machine learning. Automated machine learning (AutoML) seeks to automate these tasks to enable widespread use of machine learning by non-experts. This paper introduces OBOE, a collaborative filtering method for time-constrained model selection and hyperparameter tuning. OBOE forms a matrix of the cross-validated errors of a large number of supervised learning models (algorithms together with hyperparameters) on a large number of datasets, and fits a low rank model to learn the low-dimensional feature vectors for the models and datasets that best predict the cross-validated errors. To find promising models for a new dataset, OBOE runs a set of fast but informative algorithms on the new dataset and uses their cross-validated errors to infer the feature vector for the new dataset. OBOE can find good models under constraints on the number of models fit or the total time budget. To this end, this paper develops a new heuristic for active learning in time-constrained matrix completion based on optimal experiment design. Our experiments demonstrate that OBOE delivers state-of-the-art performance faster than competing approaches on a test bed of supervised learning problems. Moreover, the success of the bilinear model used by OBOE suggests that AutoML may be simpler than was previously understood.</div>
+<div class="bib">
+@inproceedings{yang2019oboe,<br />
+  title={{OBOE}: Collaborative Filtering for {AutoML} Model Selection},<br />
+  author={Yang, Chengrun and Akimoto, Yuji and Kim, Dae Won and Udell, Madeleine},<br />
+  booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},<br />
+  pages={1173--1183},<br />
+  year={2019}<br />
+}
+</div>
+</p>
+</li>
+</ul>
+<h3>Preprints and Workshops</h3>
+<ul>
+<li><p><b>Low-Rank Tensor Recovery with Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization</b> <br />
+<a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, <a href="https://people.orie.cornell.edu/ld446/" target=&ldquo;blank&rdquo;> Lijun
+ Ding</a>, Chengrun Yang, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
+ Udell</a> <br />
+2020 <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2012.03436" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>] <br /> 
+<div class="abstract">The nuclear norm and Schatten-p quasi-norm of a matrix are popular rank proxies in low-rank matrix recovery. Unfortunately, computing the nuclear norm or Schatten-p quasi-norm of a tensor is NP-hard, which is a pity for low-rank tensor completion (LRTC) and tensor robust principal component analysis (TRPCA). In this paper, we propose a new class of rank regularizers based on the Euclidean norms of the CP component vectors of a tensor and show that these regularizers are monotonic transformations of tensor Schatten-p quasi-norm. This connection enables us to minimize the Schatten-p quasi-norm in LRTC and TRPCA implicitly. The methods do not use the singular value decomposition and hence scale to big tensors. Moreover, the methods are not sensitive to the choice of initial rank and provide an arbitrarily sharper rank proxy for low-rank tensor recovery compared to nuclear norm. We provide theoretical guarantees in terms of recovery error for LRTC and TRPCA, which show relatively smaller p of Schatten-p quasi-norm leads to tighter error bounds. Experiments using LRTC and TRPCA on synthetic data and natural images verify the effectiveness and superiority of our methods compared to baseline methods.</div>
+<div class="bib">
+@article{fan2020low,<br />
+  title={Low-Rank Tensor Recovery with Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization},<br />
+  author={Fan, Jicong and Ding, Lijun and Yang, Chengrun and Udell, Madeleine},<br />
+  journal={arXiv preprint arXiv:2012.03436},<br />
+  year={2020}<br />
+}
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Efficient AutoML Pipeline Search with Matrix and Tensor Factorization</b> <br />
+Chengrun Yang, <a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
+ Udell</a> <br />
+2020 <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2006.04216" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/udellgroup/oboe" target=&ldquo;blank&rdquo;>code</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br /> 
+<div class="abstract">Data scientists seeking a good supervised learning model on a new dataset have many choices to make: they must preprocess the data, select features, possibly reduce the dimension, select an estimation algorithm, and choose hyperparameters for each of these pipeline components. With new pipeline components comes a combinatorial explosion in the number of choices! In this work, we design a new AutoML system to address this challenge: an automated system to design a supervised learning pipeline. Our system uses matrix and tensor factorization as surrogate models to model the combinatorial pipeline search space. Under these models, we develop greedy experiment design protocols to efficiently gather information about a new dataset. Experiments on large corpora of real-world classification problems demonstrate the effectiveness of our approach.</div>
+<div class="bib">
+@article{yang2020efficient,<br /> 
+  title={Efficient {AutoML} Pipeline Search with Matrix and Tensor Factorization},<br /> 
+  author={Yang, Chengrun and Fan, Jicong and Wu, Ziyang and Udell, Madeleine},<br /> 
+  year={2020},<br /> 
+  eprint={2006.04216},<br /> 
+  archivePrefix={arXiv},<br /> 
+  primaryClass={cs.LG},<br /> 
+}
+</div>
+</p>
+</li>
+</ul>
+<h2>Reviewing</h2>
+<ul>
+<li><p>Conferences: NeurIPS (2021, 2022), ICML (2021, 2022), ICLR (2022), AISTATS (2021), NeurIPS 2018 workshop on AI in Financial Services<br /></p>
+<li><p>Journals: Transactions on Machine Learning Research (TMLR), TPAMI Special Issue on AutoML<br /></p>
+</ul>
+
+<h2>Teaching (at Cornell)</h2>
+<ul>
+<li><p><a href="https://people.orie.cornell.edu/mru8/orie4741/" target=&ldquo;blank&rdquo;>ORIE 4741</a> (Fall 2017, Fall 2019, Fall 2020): Learning with Big Messy Data (Teaching assistant)<br /></p>
+</li>
+<li><p>ECE 4250 (Spring 2017): Digital Signal and Image Processing (Teaching assistant)<br /></p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2022-09-16, thanks to <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a> and a template from <a href="https://www.cs.cornell.edu/~cdesa/" target="blank">Chris De Sa</a>.
+</div>
+</div>
+</div>
+</body>
+</html>
