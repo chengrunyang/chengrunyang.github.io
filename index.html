@@ -103,6 +103,25 @@ MathJax.Hub.Config({
 <p><a href="javascript:void(0)" onclick="show_all_abstracts()">Show All Abstracts</a> &mdash; <a href="javascript:void(0)" onclick="hide_all_abstracts()">Hide All Abstracts</a></p>
 <h3>Conferences and Journals</h3>
 <ul>
+<li><p><b>Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization for Low-Rank Tensor Completion and Tensor Robust Principal Component Analysis</b> <br />
+<a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, <a href="https://www.lijunding.net/" target=&ldquo;blank&rdquo;> Lijun
+ Ding</a>, Chengrun Yang, Zhao Zhang, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
+ Udell</a> <br />
+Transactions on Machine Learning Research (TMLR), 2023 <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2012.03436" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>] <br /> 
+<div class="abstract">The nuclear norm and Schatten-p quasi-norm are popular rank proxies in low-rank matrix recovery. However, computing the nuclear norm or Schatten- quasi-norm of a tensor is hard in both theory and practice, hindering their application to low-rank tensor completion (LRTC) and tensor robust principal component analysis (TRPCA). In this paper, we propose a new class of tensor rank regularizers based on the Euclidean norms of the CP component vectors of a tensor and show that these regularizers are monotonic transformations of tensor Schatten-p quasi-norm. This connection enables us to minimize the Schatten-p quasi-norm in LRTC and TRPCA implicitly via the component vectors. The method scales to big tensors and provides an arbitrarily sharper rank proxy for low-rank tensor recovery compared to the nuclear norm. On the other hand, we study the generalization abilities of LRTC with the Schatten-p quasi-norm regularizer and LRTC with the proposed regularizers. The theorems show that a relatively sharper regularizer leads to a tighter error bound, which is consistent with our numerical results. Particularly, we prove that for LRTC with Schatten-p quasi-norm regularizer on d-order tensors, p=1/d is always better than any p>1/d in terms of the generalization ability. We also provide a recovery error bound to verify the usefulness of small p in the Schatten-p quasi-norm for TRPCA. Numerical results on synthetic data and real data demonstrate the effectiveness of the regularization methods and theorems.</div>
+<div class="bib">
+@article{fan2022euclidean,<br />
+  title={Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization for Low-Rank Tensor Completion and Tensor Robust Principal Component Analysis},<br />
+  author={Fan, Jicong and Ding, Lijun and Yang, Chengrun and Zhang, Zhao and Udell, Madeleine},<br />
+  journal={Transactions on Machine Learning Research},<br />
+  year={2022}<br />
+}
+</div>
+</p>
+</li>
+</ul>
+<ul>
 <li><p><b> TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets</b> <br />
 Chengrun Yang, Gabriel Bender,  <a href="https://quark0.github.io/" target=&ldquo;blank&rdquo;> Hanxiao Liu</a>, Pieter-Jan Kindermans, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine Udell</a>, Yifeng Lu,  <a href="https://cs.stanford.edu/~quocle/" target=&ldquo;blank&rdquo;> Quoc Le</a>, Da Huang <br />
 Neural Information Processing Systems (NeurIPS), 2022 <br />
@@ -175,7 +194,7 @@ IEEE Transactions on Signal Processing (TSP), 2021 <br />
 </ul>
 <ul>
 <li><p><b>TenIPS: Inverse Propensity Sampling for Tensor Completion</b> <br />
-Chengrun Yang, <a href="https://people.orie.cornell.edu/ld446/" target=&ldquo;blank&rdquo;> Lijun
+Chengrun Yang, <a href="https://www.lijunding.net/" target=&ldquo;blank&rdquo;> Lijun
  Ding</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
  Udell</a> <br />
 International Conference on Artificial Intelligence and Statistics (AISTATS), 2021 <br />
@@ -217,7 +236,7 @@ ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2020 <br />
 </ul>
 <ul>
 <li><p><b>Spectral Frank-Wolfe Algorithm: Strict Complementarity and Linear Convergence</b> <br />
-<a href="https://people.orie.cornell.edu/ld446/" target=&ldquo;blank&rdquo;> Lijun
+<a href="https://www.lijunding.net/" target=&ldquo;blank&rdquo;> Lijun
  Ding</a>, <a href="https://people.orie.cornell.edu/yf275/" target=&ldquo;blank&rdquo;> Yingjie
  Fei</a>, Qiantong Xu, Chengrun Yang <br />
 International Conference on Machine Learning (ICML), 2020 <br />
@@ -258,25 +277,6 @@ Preliminary version at NeurIPS 2018 Workshop on Meta-Learning <br />
 </li>
 </ul>
 <h3>Preprints and Workshops</h3>
-<ul>
-<li><p><b>Low-Rank Tensor Recovery with Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization</b> <br />
-<a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, <a href="https://people.orie.cornell.edu/ld446/" target=&ldquo;blank&rdquo;> Lijun
- Ding</a>, Chengrun Yang, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
- Udell</a> <br />
-2020 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2012.03436" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>] <br /> 
-<div class="abstract">The nuclear norm and Schatten-p quasi-norm of a matrix are popular rank proxies in low-rank matrix recovery. Unfortunately, computing the nuclear norm or Schatten-p quasi-norm of a tensor is NP-hard, which is a pity for low-rank tensor completion (LRTC) and tensor robust principal component analysis (TRPCA). In this paper, we propose a new class of rank regularizers based on the Euclidean norms of the CP component vectors of a tensor and show that these regularizers are monotonic transformations of tensor Schatten-p quasi-norm. This connection enables us to minimize the Schatten-p quasi-norm in LRTC and TRPCA implicitly. The methods do not use the singular value decomposition and hence scale to big tensors. Moreover, the methods are not sensitive to the choice of initial rank and provide an arbitrarily sharper rank proxy for low-rank tensor recovery compared to nuclear norm. We provide theoretical guarantees in terms of recovery error for LRTC and TRPCA, which show relatively smaller p of Schatten-p quasi-norm leads to tighter error bounds. Experiments using LRTC and TRPCA on synthetic data and natural images verify the effectiveness and superiority of our methods compared to baseline methods.</div>
-<div class="bib">
-@article{fan2020low,<br />
-  title={Low-Rank Tensor Recovery with Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization},<br />
-  author={Fan, Jicong and Ding, Lijun and Yang, Chengrun and Udell, Madeleine},<br />
-  journal={arXiv preprint arXiv:2012.03436},<br />
-  year={2020}<br />
-}
-</div>
-</p>
-</li>
-</ul>
 <ul>
 <li><p><b>Efficient AutoML Pipeline Search with Matrix and Tensor Factorization</b> <br />
 Chengrun Yang, <a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
