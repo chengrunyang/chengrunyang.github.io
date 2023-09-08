@@ -88,8 +88,7 @@ MathJax.Hub.Config({
 <h1>Chengrun Yang</h1>
 <table class="imgtable"><tr><td>
 <img src="images/chengrun_yang_night.JPG" alt="Chengrun Yang" width="160px" />&nbsp;</td>
-<td align="left"><p>Research Scientist
-<br /> Google Brain, AutoML team
+<td align="left"><p>Research Scientist, Google DeepMind
 <br />Mountain View, California, USA
 
 <br /><br /> Contact: chengrunyang at gmail dot com
@@ -97,10 +96,40 @@ MathJax.Hub.Config({
 </p>
 </td></tr></table>
 <h2>About Me</h2>
-<p>I am a research scientist in the AutoML team at <b><a href="https://research.google/teams/brain/" target=&ldquo;blank&rdquo;>Google Brain</a></b>. I obtained my Ph.D. in the <b><a href="https://ece.cornell.edu" target=&ldquo;blank&rdquo;>School of Electrical and Computer Engineering</a></b> at <b><a href="https://www.cornell.edu" target=&ldquo;blank&rdquo;>Cornell University</a></b> in May 2022, where I was advised by Prof. <b><a href="https://web.stanford.edu/~udell/" target=&ldquo;blank&rdquo;>Madeleine Udell</a></b> and had Prof. <b><a href="http://www.cs.cornell.edu/people/tj/" target=&ldquo;blank&rdquo;>Thorsten Joachims</a></b> and Prof. <b><a href="https://www.cs.cornell.edu/~kilian/" target=&ldquo;blank&rdquo;>Kilian Q. Weinberger</a></b> on my committee. From Summer 2021 to Spring 2022, I was a student researcher at Google Brain. I received a B.S. degree in physics from <b><a href="https://www.fudan.edu.cn/en/main.psp" target=&ldquo;blank&rdquo;>Fudan University</a></b> in 2016.</p>
-<p>My research interest lies broadly in optimization methods for machine learning. My <b><a href="https://people.ece.cornell.edu/cy/_papers/chengrun_phd_thesis.pdf" target=&ldquo;blank&rdquo;>Ph.D. thesis</a></b> focuses on automated machine learning (AutoML) under resource constraints: how to find better models with limited resources in time, compute, and memory? I target this problem from the perspective of constrained optimization. Examples of my tools include low-rank matrix and tensor decomposition, experiment design, statistical sampling, and reinforcement learning. With this view, I have a continuing interest in the interplay between machine learning tasks and constrained optimization approaches: which part of the real problem is the most expensive, and how optimization tools can make it cheaper.</p>
+<p>I am a research scientist at Google DeepMind. My research interest lies broadly in optimization methods for machine learning.</p>
+<p>I obtained my Ph.D. in the <b><a href="https://ece.cornell.edu" target=&ldquo;blank&rdquo;>School of Electrical and Computer Engineering</a></b> at <b><a href="https://www.cornell.edu" target=&ldquo;blank&rdquo;>Cornell University</a></b> in May 2022. My <b><a href="https://people.ece.cornell.edu/cy/_papers/chengrun_phd_thesis.pdf" target=&ldquo;blank&rdquo;>Ph.D. thesis</a></b> focused on resource-constrained AutoML. I was advised by Prof. <b><a href="https://web.stanford.edu/~udell/" target=&ldquo;blank&rdquo;>Madeleine Udell</a></b> and had Prof. <b><a href="http://www.cs.cornell.edu/people/tj/" target=&ldquo;blank&rdquo;>Thorsten Joachims</a></b> and Prof. <b><a href="https://www.cs.cornell.edu/~kilian/" target=&ldquo;blank&rdquo;>Kilian Q. Weinberger</a></b> on my committee. From Summer 2021 to Spring 2022, I was a student researcher at Google Brain. I received a B.S. degree in physics from <b><a href="https://www.fudan.edu.cn/en/main.psp" target=&ldquo;blank&rdquo;>Fudan University</a></b> in 2016.</p>
 <h2>Papers</h2>
 <p><a href="javascript:void(0)" onclick="show_all_abstracts()">Show All Abstracts</a> &mdash; <a href="javascript:void(0)" onclick="hide_all_abstracts()">Hide All Abstracts</a></p>
+<h3>Preprints</h3>
+<ul>
+<li><p><b>Large Language Models as Optimizers</b> <br />
+Chengrun Yang*, Xuezhi Wang, Yifeng Lu, <a href="https://quark0.github.io/" target=&ldquo;blank&rdquo;> Hanxiao Liu</a>, <a href="https://cs.stanford.edu/~quocle/" target=&ldquo;blank&rdquo;> Quoc V. Le</a>, <a href="https://dennyzhou.github.io/" target=&ldquo;blank&rdquo;> Denny Zhou</a>, <a href="https://jungyhuk.github.io/" target=&ldquo;blank&rdquo;> Xinyun Chen</a>* <br />
+arXiv, 2023 <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2309.03409" target=&ldquo;blank&rdquo;>arXiv</a>] <br /> 
+<div class="abstract">Optimization is ubiquitous. While derivative-based algorithms have been powerful tools for various problems, the absence of gradient imposes challenges on many real-world applications. In this work, we propose Optimization by PROmpting (OPRO), a simple and effective approach to leverage large language models (LLMs) as optimizers, where the optimization task is described in natural language. In each optimization step, the LLM generates new solutions from the prompt that contains previously generated solutions with their values, then the new solutions are evaluated and added to the prompt for the next optimization step. We first showcase OPRO on linear regression and traveling salesman problems, then move on to prompt optimization where the goal is to find instructions that maximize the task accuracy. With a variety of LLMs, we demonstrate that the best prompts optimized by OPRO outperform human-designed prompts by up to 8% on GSM8K, and by up to 50% on Big-Bench Hard tasks.</div>
+*Equal contribution</p>
+</li>
+</ul>
+<!-- <ul>
+<li><p><b>Efficient AutoML Pipeline Search with Matrix and Tensor Factorization</b> <br />
+Chengrun Yang, <a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
+ Udell</a> <br />
+2020 <br />
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2006.04216" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/udellgroup/oboe" target=&ldquo;blank&rdquo;>code</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br /> 
+<div class="abstract">Data scientists seeking a good supervised learning model on a new dataset have many choices to make: they must preprocess the data, select features, possibly reduce the dimension, select an estimation algorithm, and choose hyperparameters for each of these pipeline components. With new pipeline components comes a combinatorial explosion in the number of choices! In this work, we design a new AutoML system to address this challenge: an automated system to design a supervised learning pipeline. Our system uses matrix and tensor factorization as surrogate models to model the combinatorial pipeline search space. Under these models, we develop greedy experiment design protocols to efficiently gather information about a new dataset. Experiments on large corpora of real-world classification problems demonstrate the effectiveness of our approach.</div>
+<div class="bib">
+@article{yang2020efficient,<br /> 
+  title={Efficient {AutoML} Pipeline Search with Matrix and Tensor Factorization},<br /> 
+  author={Yang, Chengrun and Fan, Jicong and Wu, Ziyang and Udell, Madeleine},<br /> 
+  year={2020},<br /> 
+  eprint={2006.04216},<br /> 
+  archivePrefix={arXiv},<br /> 
+  primaryClass={cs.LG},<br /> 
+}
+</div>
+</p>
+</li>
+</ul> -->
 <h3>Conferences and Journals</h3>
 <ul>
 <li><p><b>Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization for Low-Rank Tensor Completion and Tensor Robust Principal Component Analysis</b> <br />
@@ -123,7 +152,7 @@ Transactions on Machine Learning Research (TMLR), 2023 <br />
 </ul>
 <ul>
 <li><p><b> TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets</b> <br />
-Chengrun Yang, Gabriel Bender,  <a href="https://quark0.github.io/" target=&ldquo;blank&rdquo;> Hanxiao Liu</a>, Pieter-Jan Kindermans, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine Udell</a>, Yifeng Lu,  <a href="https://cs.stanford.edu/~quocle/" target=&ldquo;blank&rdquo;> Quoc Le</a>, Da Huang <br />
+Chengrun Yang, Gabriel Bender,  <a href="https://quark0.github.io/" target=&ldquo;blank&rdquo;> Hanxiao Liu</a>, Pieter-Jan Kindermans, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine Udell</a>, Yifeng Lu,  <a href="https://cs.stanford.edu/~quocle/" target=&ldquo;blank&rdquo;> Quoc V. Le</a>, Da Huang <br />
 Neural Information Processing Systems (NeurIPS), 2022 <br />
 [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2204.07615" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/google-research/tabnas" target=&ldquo;blank&rdquo;>code</a>] [<a href="posters/tabnas_neurips22_poster.pdf" target=&ldquo;blank&rdquo;>poster</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
 <div class="abstract">The best neural architecture for a given machine learning problem depends on many factors: not only the complexity and structure of the dataset, but also on resource constraints including latency, compute, energy consumption, etc. Neural architecture search (NAS) for tabular datasets is an important but under-explored problem. Previous NAS algorithms designed for image search spaces incorporate resource constraints directly into the reinforcement learning (RL) rewards. However, for NAS on tabular datasets, this protocol often discovers suboptimal architectures. This paper develops TabNAS, a new and more effective approach to handle resource constraints in tabular NAS using an RL controller motivated by the idea of rejection sampling. TabNAS immediately discards any architecture that violates the resource constraints without training or learning from that architecture. TabNAS uses a Monte-Carlo-based correction to the RL policy gradient update to account for this extra filtering step. Results on several tabular datasets demonstrate the superiority of TabNAS over previous reward-shaping methods: it finds better models that obey the constraints.</div>
@@ -276,43 +305,22 @@ Preliminary version at NeurIPS 2018 Workshop on Meta-Learning <br />
 </p>
 </li>
 </ul>
-<h3>Preprints and Workshops</h3>
-<ul>
-<li><p><b>Efficient AutoML Pipeline Search with Matrix and Tensor Factorization</b> <br />
-Chengrun Yang, <a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
- Udell</a> <br />
-2020 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2006.04216" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/udellgroup/oboe" target=&ldquo;blank&rdquo;>code</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br /> 
-<div class="abstract">Data scientists seeking a good supervised learning model on a new dataset have many choices to make: they must preprocess the data, select features, possibly reduce the dimension, select an estimation algorithm, and choose hyperparameters for each of these pipeline components. With new pipeline components comes a combinatorial explosion in the number of choices! In this work, we design a new AutoML system to address this challenge: an automated system to design a supervised learning pipeline. Our system uses matrix and tensor factorization as surrogate models to model the combinatorial pipeline search space. Under these models, we develop greedy experiment design protocols to efficiently gather information about a new dataset. Experiments on large corpora of real-world classification problems demonstrate the effectiveness of our approach.</div>
-<div class="bib">
-@article{yang2020efficient,<br /> 
-  title={Efficient {AutoML} Pipeline Search with Matrix and Tensor Factorization},<br /> 
-  author={Yang, Chengrun and Fan, Jicong and Wu, Ziyang and Udell, Madeleine},<br /> 
-  year={2020},<br /> 
-  eprint={2006.04216},<br /> 
-  archivePrefix={arXiv},<br /> 
-  primaryClass={cs.LG},<br /> 
-}
-</div>
-</p>
-</li>
-</ul>
 <h2>Reviewing</h2>
 <ul>
-<li><p>Conferences: NeurIPS (2021, 2022), ICML (2021, 2022), ICLR (2022), AISTATS (2021), NeurIPS 2018 workshop on AI in Financial Services<br /></p>
+<li><p>Conferences: NeurIPS (2021, 2022, 2023), ICML (2021, 2022), ICLR (2022), AISTATS (2021), NeurIPS 2018 workshop on AI in Financial Services<br /></p>
 <li><p>Journals: Transactions on Machine Learning Research (TMLR), TPAMI Special Issue on AutoML<br /></p>
 </ul>
 
 <h2>Teaching (at Cornell)</h2>
 <ul>
-<li><p><a href="https://people.orie.cornell.edu/mru8/orie4741/" target=&ldquo;blank&rdquo;>ORIE 4741</a> (Fall 2017, Fall 2019, Fall 2020): Learning with Big Messy Data (Teaching assistant)<br /></p>
+<li><p><a href="https://people.orie.cornell.edu/mru8/orie4741/" target=&ldquo;blank&rdquo;>ORIE 4741</a> (Fall 2017, Fall 2019, Fall 2020): Learning with Big Messy Data (Teaching Assistant)<br /></p>
 </li>
-<li><p>ECE 4250 (Spring 2017): Digital Signal and Image Processing (Teaching assistant)<br /></p>
+<li><p>ECE 4250 (Spring 2017): Digital Signal and Image Processing (Teaching Assistant)<br /></p>
 </li>
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2022-12-07, thanks to <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a> and a template from <a href="https://www.cs.cornell.edu/~cdesa/" target="blank">Chris De Sa</a>.
+Page generated 2023-09-07, thanks to <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a> and a template from <a href="https://www.cs.cornell.edu/~cdesa/" target="blank">Chris De Sa</a>.
 </div>
 </div>
 </div>
