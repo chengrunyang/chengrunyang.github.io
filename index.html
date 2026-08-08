@@ -1,152 +1,230 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Chengrun Yang</title>
-<!-- MathJax -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
-</script>
-<script type="text/x-mathjax-config">
+  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <title>Chengrun Yang</title>
+  <!-- MathJax -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+  </script>
+  <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
 	  TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-<!-- End MathJax -->
-<script type="text/javascript">
+  <!-- End MathJax -->
+  <script type="text/javascript">
 
-      function toggle_abstract(elem) {
-        var as = elem.parentNode.parentNode.getElementsByClassName("abstract");
-        if (as.length > 0) {
-          var a = as[0];
-          a.className = "abstract-show"
-        }
-        else {
-          as = elem.parentNode.parentNode.getElementsByClassName("abstract-show");
-          var a = as[0];
-          a.className = "abstract"
-        }
+    function toggle_abstract(elem) {
+      var as = elem.parentNode.parentNode.getElementsByClassName("abstract");
+      if (as.length > 0) {
+        var a = as[0];
+        a.className = "abstract-show"
       }
+      else {
+        as = elem.parentNode.parentNode.getElementsByClassName("abstract-show");
+        var a = as[0];
+        a.className = "abstract"
+      }
+    }
 
-      function toggle_bib(elem) {
-        var as = elem.parentNode.parentNode.getElementsByClassName("bib");
-        if (as.length > 0) {
-          var a = as[0];
-          a.className = "bib-show"
-        }
-        else {
-          as = elem.parentNode.parentNode.getElementsByClassName("bib-show");
-          var a = as[0];
-          a.className = "bib"
-        }
+    function toggle_bib(elem) {
+      var as = elem.parentNode.parentNode.getElementsByClassName("bib");
+      if (as.length > 0) {
+        var a = as[0];
+        a.className = "bib-show"
       }
+      else {
+        as = elem.parentNode.parentNode.getElementsByClassName("bib-show");
+        var a = as[0];
+        a.className = "bib"
+      }
+    }
 
-      function show_all_abstracts() {
-        var as = [...document.getElementsByClassName("abstract")];
-        for (i = 0; i < as.length; i+=1) {
-          var a = as[i];
-          a.className = "abstract-show";
-        }
+    function show_all_abstracts() {
+      var as = [...document.getElementsByClassName("abstract")];
+      for (i = 0; i < as.length; i += 1) {
+        var a = as[i];
+        a.className = "abstract-show";
       }
+    }
 
-      function hide_all_abstracts() {
-        var as = [...document.getElementsByClassName("abstract-show")];
-        for (i = 0; i < as.length; i+=1) {
-          var a = as[i];
-          a.className = "abstract";
-        }
+    function hide_all_abstracts() {
+      var as = [...document.getElementsByClassName("abstract-show")];
+      for (i = 0; i < as.length; i += 1) {
+        var a = as[i];
+        a.className = "abstract";
       }
+    }
 
-</script>
-<style>
-      .abstract {
-        display: none;
-      }
-      .abstract-show {
-        margin: 10px;
-        padding: 7px;
-        border: 1px dotted #A09040;
-        text-align: justify;
-      }
-      .bib {
-        display: none;
-      }
-      .bib-show {
-        margin: 10px;
-        padding: 7px;
-        border: 1px dotted #A09040;
-        text-align: justify;
-      }
-</style>
+  </script>
+  <style>
+    .abstract {
+      display: none;
+    }
+
+    .abstract-show {
+      margin: 10px;
+      padding: 7px;
+      border: 1px dotted #A09040;
+      text-align: justify;
+    }
+
+    .bib {
+      display: none;
+    }
+
+    .bib-show {
+      margin: 10px;
+      padding: 7px;
+      border: 1px dotted #A09040;
+      text-align: justify;
+    }
+  </style>
 
 </head>
-<body>
-<div id="layout-content">
-<p><br /></p>
-<h1>Chengrun Yang</h1>
-<table class="imgtable"><tr><td>
-<img src="images/chengrun_yang_night.JPG" alt="Chengrun Yang" width="160px" />&nbsp;</td>
-<td align="left"><p>Research Scientist, Google DeepMind
-<br />Mountain View, California, USA
 
-<br /><br /> Contact: crgyang at gmail dot com
-<br /> <b><a href="https://twitter.com/chengrun_yang" target=&ldquo;blank&rdquo;>Twitter</a></b> | <b><a href="https://scholar.google.com/citations?user=XYYhXe4AAAAJ&hl=en" target=&ldquo;blank&rdquo;>Google Scholar </a></b> | <b><a href="https://github.com/chengrunyang" target=&ldquo;blank&rdquo;>GitHub</a></b> | <b><a href="https://www.linkedin.com/in/chengrun-yang/" target=&ldquo;blank&rdquo;>LinkedIn</a></b>
-</p>
-</td></tr></table>
-<h2>About Me</h2>
-<p>I am a research scientist at <b><a href="https://deepmind.google/" target=&ldquo;blank&rdquo;>Google DeepMind</a></b>. I am broadly interested in <b>optimization methods for machine learning</b>, with specific focus in <b>model self-improvement</b>, including but not limited to:
-<ul>
-<li>optimization with foundation models [<b><a href="https://arxiv.org/abs/2309.03409" target=&ldquo;blank&rdquo;>1</a></b>]</li>
-<li>model self-evaluation [<b><a href="https://arxiv.org/abs/2403.18802" target=&ldquo;blank&rdquo;>2</a></b>]</li>
-<li>model selection and architecture search [<b><a href="https://arxiv.org/abs/1808.03233" target=&ldquo;blank&rdquo;>3</a></b>, <b><a href="https://arxiv.org/abs/2204.07615" target=&ldquo;blank&rdquo;>4</a></b>]</li>
-</ul>
-<p>I obtained my Ph.D. in the <b><a href="https://ece.cornell.edu" target=&ldquo;blank&rdquo;>School of Electrical and Computer Engineering</a></b> at <b><a href="https://www.cornell.edu" target=&ldquo;blank&rdquo;>Cornell University</a></b> in May 2022, where my Ph.D. thesis focused on resource-constrained automated machine learning (AutoML). I was advised by Prof. <b><a href="https://web.stanford.edu/~udell/" target=&ldquo;blank&rdquo;>Madeleine Udell</a></b> and had Prof. <b><a href="http://www.cs.cornell.edu/people/tj/" target=&ldquo;blank&rdquo;>Thorsten Joachims</a></b> and Prof. <b><a href="https://www.cs.cornell.edu/~kilian/" target=&ldquo;blank&rdquo;>Kilian Q. Weinberger</a></b> on my committee. From Summer 2021 to Spring 2022, I was a student researcher at Google Brain. I received a B.S. degree in physics from <b><a href="https://www.fudan.edu.cn/en/main.psp" target=&ldquo;blank&rdquo;>Fudan University</a></b> in 2016.</p>
-<h2>Papers</h2>
-<p><a href="javascript:void(0)" onclick="show_all_abstracts()">Show All Abstracts</a> &mdash; <a href="javascript:void(0)" onclick="hide_all_abstracts()">Hide All Abstracts</a></p>
-<h3>Conferences and Journals</h3>
-<ul>
-<li><p><b>Long-Form Factuality in Large Language Models</b> <br />
-Jerry Wei*, Chengrun Yang*, Xinying Song*, Yifeng Lu*, Nathan Hu, Jie Huang, Dustin Tran, Daiyi Peng, Ruibo Liu, Da Huang, Cosmo Du, Quoc V. Le <br />
-Neural Information Processing Systems (NeurIPS), 2024 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2403.18802" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/google-deepmind/long-form-factuality" target=&ldquo;blank&rdquo;>code</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>] <br /> 
-<div class="abstract">Large language models (LLMs) often generate content that contains factual errors when responding to fact-seeking prompts on open-ended topics. To benchmark a model's long-form factuality in open domains, we first use GPT-4 to generate LongFact, a prompt set comprising thousands of questions spanning 38 topics. We then propose that LLM agents can be used as automated evaluators for long-form factuality through a method which we call Search-Augmented Factuality Evaluator (SAFE). SAFE utilizes an LLM to break down a long-form response into a set of individual facts and to evaluate the accuracy of each fact using a multi-step reasoning process comprising sending search queries to Google Search and determining whether a fact is supported by the search results. Furthermore, we propose extending F1 score as an aggregated metric for long-form factuality. To do so, we balance the percentage of supported facts in a response (precision) with the percentage of provided facts relative to a hyperparameter representing a user's preferred response length (recall).<br>
-Empirically, we demonstrate that LLM agents can achieve superhuman rating performance - on a set of ~16k individual facts, SAFE agrees with crowdsourced human annotators 72% of the time, and on a random subset of 100 disagreement cases, SAFE wins 76% of the time. At the same time, SAFE is more than 20 times cheaper than human annotators. We also benchmark thirteen language models on LongFact across four model families (Gemini, GPT, Claude, and PaLM-2), finding that larger language models generally achieve better long-form factuality. LongFact, SAFE, and all experimental code are available at https://github.com/google-deepmind/long-form-factuality.</div>
-<div class="bib">
-@article{wei2024long,<br />
-  title={Long-Form Factuality in Large Language Models},<br />
-  author={Wei, Jerry and Yang, Chengrun and Song, Xinying and Lu, Yifeng and Hu, Nathan and Huang, Jie and Tran, Dustrin and Peng, Daiyi and Liu, Ruibo and Huang, Da and Du, Cosmo and Le, Quoc V},<br />
-  journal={arXiv preprint arXiv:2403.18802},<br />
-  year={2024}<br />
-}
-</div>
-*Lead contribution</p>
-</li>
-</ul>
-<ul>
-<li><p><b>Large Language Models as Optimizers</b> <br />
-Chengrun Yang*, Xuezhi Wang, Yifeng Lu, <a href="https://quark0.github.io/" target=&ldquo;blank&rdquo;> Hanxiao Liu</a>, <a href="https://cs.stanford.edu/~quocle/" target=&ldquo;blank&rdquo;> Quoc V. Le</a>, <a href="https://dennyzhou.github.io/" target=&ldquo;blank&rdquo;> Denny Zhou</a>, <a href="https://jungyhuk.github.io/" target=&ldquo;blank&rdquo;> Xinyun Chen</a>* <br />
-International Conference on Learning Representations (ICLR), 2024 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2309.03409" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/google-deepmind/opro" target=&ldquo;blank&rdquo;>code</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>] <br /> 
-<div class="abstract">Optimization is ubiquitous. While derivative-based algorithms have been powerful tools for various problems, the absence of gradient imposes challenges on many real-world applications. In this work, we propose Optimization by PROmpting (OPRO), a simple and effective approach to leverage large language models (LLMs) as optimizers, where the optimization task is described in natural language. In each optimization step, the LLM generates new solutions from the prompt that contains previously generated solutions with their values, then the new solutions are evaluated and added to the prompt for the next optimization step. We first showcase OPRO on linear regression and traveling salesman problems, then move on to prompt optimization where the goal is to find instructions that maximize the task accuracy. With a variety of LLMs, we demonstrate that the best prompts optimized by OPRO outperform human-designed prompts by up to 8% on GSM8K, and by up to 50% on Big-Bench Hard tasks.</div>
-<div class="bib">
-@article{yang2023large,<br />
-  title={Large Language Models as Optimizers},<br />
-  author={Yang, Chengrun and Wang, Xuezhi and Lu, Yifeng and Liu, Hanxiao and Le, Quoc V and Zhou, Denny and Chen, Xinyun},<br />
-  journal={arXiv preprint arXiv:2309.03409},<br />
-  year={2023}<br />
-}
-</div>
-*Equal contribution</p>
-</li>
-</ul>
-<!-- <ul>
+<body>
+  <div id="layout-content">
+    <p><br /></p>
+    <h1>Chengrun Yang</h1>
+    <table class="imgtable">
+      <tr>
+        <td>
+          <img src="images/chengrun_yang_night.JPG" alt="Chengrun Yang" width="160px" />&nbsp;
+        </td>
+        <td align="left">
+          <p>Research Scientist, Google DeepMind
+            <br />New York, USA
+
+            <br /><br /> Contact: chengrunyang at gmail dot com
+            <br /><br /> <b><a href="https://twitter.com/chengrun_yang" target="_blank" title="X"><i
+                  class="fa-brands fa-x-twitter" style="font-size: 2em;"></i></a></b> | <b><a
+                href="https://scholar.google.com/citations?user=XYYhXe4AAAAJ&hl=en" target="_blank"
+                title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 2em;"></i></a></b> | <b><a
+                href="https://github.com/chengrunyang" target="_blank" title="GitHub"><i class="fab fa-github"
+                  style="font-size: 2em;"></i></a></b> | <b><a href="https://www.linkedin.com/in/chengrun-yang/"
+                target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a></b>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <h2>About Me</h2>
+    <p>I am a research scientist at <b><a href="https://deepmind.google/" target="_blank">Google DeepMind</a></b>. I am
+      broadly interested in <b>optimization methods for machine learning</b>, with specific focus in <b>model
+        self-improvement</b>. I am convinced that powerful models can autonomously improve and evaluate themselves, with
+      or without human supervision, and this self-driven approach is the most promising path toward building even
+      stronger models.
+      Some of my previous work towards this direction include:
+    <ul>
+      <li><b>LLMs as optimizers</b> [<b><a href="https://arxiv.org/abs/2309.03409" target="_blank">1</a></b>]: LLMs can
+        recursively improve prompts and math solutions</li>
+      <li><b>LLM agents as AI researchers</b>: search for better ideas and code implementations with LLM agents, found
+        better RL recipe for <b><a
+            href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/"
+            target="_blank">Gemini 3 Deep Think</a></b></li>
+      <li><b>model self-evaluation</b> [<b><a href="https://arxiv.org/abs/2403.18802" target="_blank">2</a></b>]:
+        using LLM agents to measure model factuality</li>
+      <li><b>model selection and architecture search</b> [<b><a href="https://arxiv.org/abs/1808.03233"
+            target="_blank">3</a></b>, <b><a href="https://arxiv.org/abs/2204.07615" target="_blank">4</a></b>]</li>
+    </ul>
+    <p>I obtained my Ph.D. in the <b><a href="https://ece.cornell.edu" target="_blank">School of Electrical and Computer
+          Engineering</a></b> at <b><a href="https://www.cornell.edu" target="_blank">Cornell University</a></b> in May
+      2022, where my Ph.D. thesis focused on resource-constrained automated machine learning (AutoML). I was advised by
+      Prof. <b><a href="https://web.stanford.edu/~udell/" target="_blank">Madeleine Udell</a></b> and had Prof. <b><a
+          href="http://www.cs.cornell.edu/people/tj/" target="_blank">Thorsten Joachims</a></b> and Prof. <b><a
+          href="https://www.cs.cornell.edu/~kilian/" target="_blank">Kilian Q. Weinberger</a></b> on my committee. From
+      Summer 2021 to Spring 2022, I was a student researcher at Google Brain. I received a B.S. degree in physics from
+      <b><a href="https://www.fudan.edu.cn/en/main.psp" target="_blank">Fudan University</a></b> in 2016.
+    </p>
+    <h2>Papers</h2>
+    <p><a href="javascript:void(0)" onclick="show_all_abstracts()">Show All Abstracts</a> &mdash; <a
+        href="javascript:void(0)" onclick="hide_all_abstracts()">Hide All Abstracts</a></p>
+    <h3>Conferences and Journals</h3>
+    <ul>
+      <li>
+        <p><b>Long-Form Factuality in Large Language Models</b> <br />
+          Jerry Wei*, Chengrun Yang*, Xinying Song*, Yifeng Lu*, Nathan Hu, Jie Huang, Dustin Tran, Daiyi Peng, Ruibo
+          Liu, Da Huang, Cosmo Du, Quoc V. Le <br />
+          Neural Information Processing Systems (NeurIPS), 2024 <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/abs/2403.18802" target="_blank">arXiv</a>] [<a
+            href="https://github.com/google-deepmind/long-form-factuality" target="_blank">code</a>] [<a
+            href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>] <br />
+        <div class="abstract">Large language models (LLMs) often generate content that contains factual errors when
+          responding to fact-seeking prompts on open-ended topics. To benchmark a model's long-form factuality in open
+          domains, we first use GPT-4 to generate LongFact, a prompt set comprising thousands of questions spanning 38
+          topics. We then propose that LLM agents can be used as automated evaluators for long-form factuality through a
+          method which we call Search-Augmented Factuality Evaluator (SAFE). SAFE utilizes an LLM to break down a
+          long-form response into a set of individual facts and to evaluate the accuracy of each fact using a multi-step
+          reasoning process comprising sending search queries to Google Search and determining whether a fact is
+          supported by the search results. Furthermore, we propose extending F1 score as an aggregated metric for
+          long-form factuality. To do so, we balance the percentage of supported facts in a response (precision) with
+          the percentage of provided facts relative to a hyperparameter representing a user's preferred response length
+          (recall).<br>
+          Empirically, we demonstrate that LLM agents can achieve superhuman rating performance - on a set of ~16k
+          individual facts, SAFE agrees with crowdsourced human annotators 72% of the time, and on a random subset of
+          100 disagreement cases, SAFE wins 76% of the time. At the same time, SAFE is more than 20 times cheaper than
+          human annotators. We also benchmark thirteen language models on LongFact across four model families (Gemini,
+          GPT, Claude, and PaLM-2), finding that larger language models generally achieve better long-form factuality.
+          LongFact, SAFE, and all experimental code are available at
+          https://github.com/google-deepmind/long-form-factuality.</div>
+        <div class="bib">
+          @article{wei2024long,<br />
+          title={Long-Form Factuality in Large Language Models},<br />
+          author={Wei, Jerry and Yang, Chengrun and Song, Xinying and Lu, Yifeng and Hu, Nathan and Huang, Jie and Tran,
+          Dustrin and Peng, Daiyi and Liu, Ruibo and Huang, Da and Du, Cosmo and Le, Quoc V},<br />
+          journal={arXiv preprint arXiv:2403.18802},<br />
+          year={2024}<br />
+          }
+        </div>
+        *Lead contribution</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><b>Large Language Models as Optimizers</b> <br />
+          Chengrun Yang*, Xuezhi Wang, Yifeng Lu, <a href="https://quark0.github.io/" target="_blank">
+            Hanxiao Liu</a>, <a href="https://cs.stanford.edu/~quocle/" target="_blank"> Quoc V. Le</a>, <a
+            href="https://dennyzhou.github.io/" target="_blank"> Denny Zhou</a>, <a href="https://jungyhuk.github.io/"
+            target="_blank"> Xinyun Chen</a>* <br />
+          International Conference on Learning Representations (ICLR), 2024 <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/abs/2309.03409" target="_blank">arXiv</a>] [<a
+            href="https://github.com/google-deepmind/opro" target="_blank">code</a>] [<a href="javascript:void(0)"
+            onclick="toggle_bib(this)">bib</a>] <br />
+        <div class="abstract">Optimization is ubiquitous. While derivative-based algorithms have been powerful tools for
+          various problems, the absence of gradient imposes challenges on many real-world applications. In this work, we
+          propose Optimization by PROmpting (OPRO), a simple and effective approach to leverage large language models
+          (LLMs) as optimizers, where the optimization task is described in natural language. In each optimization step,
+          the LLM generates new solutions from the prompt that contains previously generated solutions with their
+          values, then the new solutions are evaluated and added to the prompt for the next optimization step. We first
+          showcase OPRO on linear regression and traveling salesman problems, then move on to prompt optimization where
+          the goal is to find instructions that maximize the task accuracy. With a variety of LLMs, we demonstrate that
+          the best prompts optimized by OPRO outperform human-designed prompts by up to 8% on GSM8K, and by up to 50% on
+          Big-Bench Hard tasks.</div>
+        <div class="bib">
+          @article{yang2023large,<br />
+          title={Large Language Models as Optimizers},<br />
+          author={Yang, Chengrun and Wang, Xuezhi and Lu, Yifeng and Liu, Hanxiao and Le, Quoc V and Zhou, Denny and
+          Chen, Xinyun},<br />
+          journal={arXiv preprint arXiv:2309.03409},<br />
+          year={2023}<br />
+          }
+        </div>
+        *Equal contribution</p>
+      </li>
+    </ul>
+    <!-- <ul>
 <li><p><b>Efficient AutoML Pipeline Search with Matrix and Tensor Factorization</b> <br />
-Chengrun Yang, <a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
+Chengrun Yang, <a href="https://jicongfan.github.io/" target="_blank"> Jicong Fan</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target="_blank"> Madeleine
  Udell</a> <br />
 2020 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2006.04216" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/udellgroup/oboe" target=&ldquo;blank&rdquo;>code</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br /> 
+[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2006.04216" target="_blank">arXiv</a>] [<a href="https://github.com/udellgroup/oboe" target="_blank">code</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br /> 
 <div class="abstract">Data scientists seeking a good supervised learning model on a new dataset have many choices to make: they must preprocess the data, select features, possibly reduce the dimension, select an estimation algorithm, and choose hyperparameters for each of these pipeline components. With new pipeline components comes a combinatorial explosion in the number of choices! In this work, we design a new AutoML system to address this challenge: an automated system to design a supervised learning pipeline. Our system uses matrix and tensor factorization as surrogate models to model the combinatorial pipeline search space. Under these models, we develop greedy experiment design protocols to efficiently gather information about a new dataset. Experiments on large corpora of real-world classification problems demonstrate the effectiveness of our approach.</div>
 <div class="bib">
 @article{yang2020efficient,<br /> 
@@ -161,229 +239,392 @@ Chengrun Yang, <a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;
 </p>
 </li>
 </ul> -->
-<ul>
-<li><p><b>Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization for Low-Rank Tensor Completion and Tensor Robust Principal Component Analysis</b> <br />
-<a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, <a href="https://www.lijunding.net/" target=&ldquo;blank&rdquo;> Lijun
- Ding</a>, Chengrun Yang, Zhao Zhang, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
- Udell</a> <br />
-Transactions on Machine Learning Research (TMLR), 2023 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2012.03436" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>] <br /> 
-<div class="abstract">The nuclear norm and Schatten-p quasi-norm are popular rank proxies in low-rank matrix recovery. However, computing the nuclear norm or Schatten- quasi-norm of a tensor is hard in both theory and practice, hindering their application to low-rank tensor completion (LRTC) and tensor robust principal component analysis (TRPCA). In this paper, we propose a new class of tensor rank regularizers based on the Euclidean norms of the CP component vectors of a tensor and show that these regularizers are monotonic transformations of tensor Schatten-p quasi-norm. This connection enables us to minimize the Schatten-p quasi-norm in LRTC and TRPCA implicitly via the component vectors. The method scales to big tensors and provides an arbitrarily sharper rank proxy for low-rank tensor recovery compared to the nuclear norm. On the other hand, we study the generalization abilities of LRTC with the Schatten-p quasi-norm regularizer and LRTC with the proposed regularizers. The theorems show that a relatively sharper regularizer leads to a tighter error bound, which is consistent with our numerical results. Particularly, we prove that for LRTC with Schatten-p quasi-norm regularizer on d-order tensors, p=1/d is always better than any p>1/d in terms of the generalization ability. We also provide a recovery error bound to verify the usefulness of small p in the Schatten-p quasi-norm for TRPCA. Numerical results on synthetic data and real data demonstrate the effectiveness of the regularization methods and theorems.</div>
-<div class="bib">
-@article{fan2022euclidean,<br />
-  title={Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization for Low-Rank Tensor Completion and Tensor Robust Principal Component Analysis},<br />
-  author={Fan, Jicong and Ding, Lijun and Yang, Chengrun and Zhang, Zhao and Udell, Madeleine},<br />
-  journal={Transactions on Machine Learning Research},<br />
-  year={2022}<br />
-}
-</div>
-</p>
-</li>
-</ul>
-<ul>
-<li><p><b> TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets</b> <br />
-Chengrun Yang, Gabriel Bender,  <a href="https://quark0.github.io/" target=&ldquo;blank&rdquo;> Hanxiao Liu</a>, Pieter-Jan Kindermans, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine Udell</a>, Yifeng Lu,  <a href="https://cs.stanford.edu/~quocle/" target=&ldquo;blank&rdquo;> Quoc V. Le</a>, Da Huang <br />
-Neural Information Processing Systems (NeurIPS), 2022 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2204.07615" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/google-research/tabnas" target=&ldquo;blank&rdquo;>code</a>] [<a href="posters/tabnas_neurips22_poster.pdf" target=&ldquo;blank&rdquo;>poster</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
-<div class="abstract">The best neural architecture for a given machine learning problem depends on many factors: not only the complexity and structure of the dataset, but also on resource constraints including latency, compute, energy consumption, etc. Neural architecture search (NAS) for tabular datasets is an important but under-explored problem. Previous NAS algorithms designed for image search spaces incorporate resource constraints directly into the reinforcement learning (RL) rewards. However, for NAS on tabular datasets, this protocol often discovers suboptimal architectures. This paper develops TabNAS, a new and more effective approach to handle resource constraints in tabular NAS using an RL controller motivated by the idea of rejection sampling. TabNAS immediately discards any architecture that violates the resource constraints without training or learning from that architecture. TabNAS uses a Monte-Carlo-based correction to the RL policy gradient update to account for this extra filtering step. Results on several tabular datasets demonstrate the superiority of TabNAS over previous reward-shaping methods: it finds better models that obey the constraints.</div>
-<div class="bib">
-@article{yang2022tabnas,<br />
-  title={TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets},<br />
-  author={Yang, Chengrun and Bender, Gabriel and Liu, Hanxiao and Kindermans, Pieter-Jan and Udell, Madeleine and Lu, Yifeng and Le, Quoc and Huang, Da},<br />
-  booktitle={Advances in Neural Information Processing Systems},<br />
-  year={2022}<br />
-}
-</div>
-</p>
-</li>
-</ul>
-<ul>
-<li><p><b>How Low Can We Go: Trading Memory for Error in Low-Precision Training</b> <br />
-Chengrun Yang*, Ziyang Wu*, <a href="https://jerry-chee.github.io/" target=&ldquo;blank&rdquo;> Jerry Chee</a>, <a href="https://www.cs.cornell.edu/~cdesa/" target=&ldquo;blank&rdquo;> Christopher De Sa</a>, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
- Udell</a><br />
-International Conference on Learning Representations (ICLR), 2022 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2106.09686" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/chengrunyang/peppp" target=&ldquo;blank&rdquo;>code</a>] [<a href="posters/peppp_iclr22_poster.pdf" target=&ldquo;blank&rdquo;>poster</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br /> 
-<div class="abstract"> Low-precision arithmetic trains deep learning models using less energy, less
-memory and less time. However, we pay a price for the savings: lower precision
-may yield larger round-off error and hence larger prediction error. As
-applications proliferate, users must choose which precision to use to train a
-new model, and chip manufacturers must decide which precisions to manufacture.
-We view these precision choices as a hyperparameter tuning problem, and borrow
-ideas from meta-learning to learn the tradeoff between memory and error. In
-this paper, we introduce Pareto Estimation to Pick the Perfect Precision
-(PEPPP). We use matrix factorization to find non-dominated configurations (the
-Pareto frontier) with a limited number of network evaluations. For any given
-memory budget, the precision that minimizes error is a point on this frontier.
-Practitioners can use the frontier to trade memory for error and choose the
-best precision for their goals.</div>
-<div class="bib">
-@inproceedings{yang2022how,<br />
-title={How Low Can We Go: Trading Memory for Error in Low-Precision Training},<br />
-author={Chengrun Yang and Ziyang Wu and Jerry Chee and Christopher De Sa and Madeleine Udell},<br />
-booktitle={International Conference on Learning Representations},<br />
-year={2022},<br />
-url={https://openreview.net/forum?id=YpSxqy_RE84}<br />
-}
-</div>
-</p>
-*Equal contribution</p>
-</li>
-</ul>
-<ul>
-<li><p><b>Robust Non-Linear Matrix Factorization for Dictionary Learning, Denoising, and Clustering</b> <br />
-<a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, Chengrun Yang, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
- Udell</a> <br />
-IEEE Transactions on Signal Processing (TSP), 2021 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2005.01317" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://ieeexplore.ieee.org/document/9366807" target=&ldquo;blank&rdquo;>IEEE</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
-<div class="abstract">Low dimensional nonlinear structure abounds in datasets across computer vision and machine learning. Kernelized matrix factorization techniques have recently been proposed to learn these nonlinear structures for denoising, classification, dictionary learning, and missing data imputation, by observing that the image of the matrix in a sufficiently large feature space is low-rank. However, these nonlinear methods fail in the presence of sparse noise or outliers. In this work, we propose a new robust nonlinear factorization method called Robust Non-Linear Matrix Factorization (RNLMF). RNLMF constructs a dictionary for the data space by factoring a kernelized feature space; a noisy matrix can then be decomposed as the sum of a sparse noise matrix and a clean data matrix that lies in a low dimensional nonlinear manifold. RNLMF is robust to sparse noise and outliers and scales to matrices with thousands of rows and columns. Empirically, RNLMF achieves noticeable improvements over baseline methods in denoising and clustering.</div>
-<div class="bib">
-@article{fan2020robust,<br />
-  author={Fan, Jicong and Yang, Chengrun and Udell, Madeleine},<br />
-  journal={IEEE Transactions on Signal Processing},<br />
-  title={Robust Non-Linear Matrix Factorization for Dictionary Learning, Denoising, and Clustering},<br />
-  year={2021},<br />
-  volume={69},<br />
-  number={},<br />
-  pages={1755-1770},<br />
-  doi={10.1109/TSP.2021.3062988}<br />
-}
-</div>
-</p>
-</li>
-</ul>
-<ul>
-<li><p><b>TenIPS: Inverse Propensity Sampling for Tensor Completion</b> <br />
-Chengrun Yang, <a href="https://www.lijunding.net/" target=&ldquo;blank&rdquo;> Lijun
- Ding</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
- Udell</a> <br />
-International Conference on Artificial Intelligence and Statistics (AISTATS), 2021 <br />
-Preliminary version at NeurIPS 2020 Workshop on Optimization for Machine Learning <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2101.00323" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://github.com/udellgroup/tenips" target=&ldquo;blank&rdquo;>code</a>] [<a href="posters/tenips_aistats21_poster.pdf" target=&ldquo;blank&rdquo;>poster</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
-<div class="abstract">Tensors are widely used to represent multiway arrays of data. The recovery of missing entries in a tensor has been extensively studied, generally under the assumption that entries are missing completely at random (MCAR). However, in most practical settings, observations are missing not at random (MNAR): the probability that a given entry is observed (also called the propensity) may depend on other entries in the tensor or even on the value of the missing entry. In this paper, we study the problem of completing a partially observed tensor with MNAR observations, without prior information about the propensities. To complete the tensor, we assume that both the original tensor and the tensor of propensities have low multilinear rank. The algorithm first estimates the propensities using a convex relaxation and then predicts missing values using a higher-order SVD approach, reweighting the observed tensor by the inverse propensities. We provide finite-sample error bounds on the resulting complete tensor. Numerical experiments demonstrate the effectiveness of our approach.</div>
-<div class="bib">
-@inproceedings{yang2021tenips,<br />
-  title={TenIPS: Inverse Propensity Sampling for Tensor Completion},<br />
-  author={Chengrun Yang and Lijun Ding and Ziyang Wu and Madeleine Udell},<br />
-  year={2021},<br />
-  eprint={2101.00323},<br />
-  archivePrefix={arXiv},<br />
-  primaryClass={stat.ML},<br />
-  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},<br />
-}
-</div>
-</p>
-</li>
-</ul>
-<ul>
-<li><p><b>AutoML Pipeline Selection: Efficiently Navigating the Combinatorial Space</b> <br />
-Chengrun Yang, <a href="https://jicongfan.github.io/" target=&ldquo;blank&rdquo;> Jicong Fan</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
- Udell </a> <br />
-ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2020 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://people.ece.cornell.edu/cy/_papers/tensor_oboe.pdf" target=&ldquo;blank&rdquo;>pdf</a>] [<a href="https://github.com/udellgroup/oboe" target=&ldquo;blank&rdquo;>code</a>] [<a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403197" target=&ldquo;blank&rdquo;>ACM</a>] [<a href="https://people.ece.cornell.edu/cy/_papers/tensor_oboe_ACM_version_errata.pdf" target=&ldquo;blank&rdquo;><b>ACM version errata</b></a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br /> 
-<div class="abstract">Data scientists seeking a good supervised learning model on a dataset have many choices to make: they must preprocess the data, select features, possibly reduce the dimension, select an estimation algorithm, and choose hyperparameters for each of these pipeline components. With new pipeline components comes a combinatorial explosion in the number of choices! In this work, we design a new AutoML system TensorOboe to address this challenge: an automated system to design a supervised learning pipeline. TensorOboe uses low rank tensor decomposition as a surrogate model for efficient pipeline search. We also develop a new greedy experiment design protocol to gather information about a new dataset efficiently. Experiments on large corpora of real-world classification problems demonstrate the effectiveness of our approach.</div>
-<div class="bib">
-@inproceedings{yang2020automl,<br /> 
-  title={{AutoML} Pipeline Selection: Efficiently Navigating the Combinatorial Space},<br /> 
-  author={Yang, Chengrun and Fan, Jicong and Wu, Ziyang and Udell, Madeleine},<br /> 
-  booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},<br /> 
-  pages={1446--1456},<br /> 
-  year={2020}<br /> 
-}
-</div>
-</p>
-</li>
-</ul>
-<ul>
-<li><p><b>Spectral Frank-Wolfe Algorithm: Strict Complementarity and Linear Convergence</b> <br />
-<a href="https://www.lijunding.net/" target=&ldquo;blank&rdquo;> Lijun
- Ding</a>, <a href="https://people.orie.cornell.edu/yf275/" target=&ldquo;blank&rdquo;> Yingjie
- Fei</a>, Qiantong Xu, Chengrun Yang <br />
-International Conference on Machine Learning (ICML), 2020 <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2006.01719" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="http://proceedings.mlr.press/v119/ding20a.html" target=&ldquo;blank&rdquo;>PMLR</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
-<div class="abstract">We develop a novel variant of the classical Frank-Wolfe algorithm, which we call spectral Frank-Wolfe, for convex optimization over a spectrahedron. The spectral Frank-Wolfe algorithm has a novel ingredient: it computes a few eigenvectors of the gradient and solves a small-scale SDP in each iteration. Such procedure overcomes slow convergence of the classical Frank-Wolfe algorithm due to ignoring eigenvalue coalescence. We demonstrate that strict complementarity of the optimization problem is key to proving linear convergence of various algorithms, such as the spectral Frank-Wolfe algorithm as well as the projected gradient method and its accelerated version.</div>
-<div class="bib">
-@inproceedings{ding2020spectral,<br />
-  title={Spectral Frank-Wolfe Algorithm: Strict Complementarity and Linear Convergence},<br />
-  author={Ding, Lijun and Fei, Yingjie and Xu, Qiantong and Yang, Chengrun},<br />
-  booktitle={International Conference on Machine Learning},<br />
-  pages={2535--2544},<br />
-  year={2020},<br />
-  organization={PMLR}<br />
-}
-</div>
-</p>
-</li>
-</ul>
-<ul>
-<li><p><b> OBOE: Collaborative Filtering for AutoML Model Selection</b> <br />
-Chengrun Yang, Yuji Akimoto, Dae Won Kim, <a href="https://people.orie.cornell.edu/mru8/" target=&ldquo;blank&rdquo;> Madeleine
- Udell</a> <br />
-ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2019 <br />
-Oral Presentation <br />
-Preliminary version at NeurIPS 2018 Workshop on Meta-Learning <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/1808.03233" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="https://people.ece.cornell.edu/cy/_papers/oboe.pdf" target=&ldquo;blank&rdquo;>pdf</a>] [<a href="https://github.com/udellgroup/oboe" target=&ldquo;blank&rdquo;>code</a>] [<a href="https://dl.acm.org/doi/10.1145/3292500.3330909" target=&ldquo;blank&rdquo;>ACM</a>] [<a href="posters/oboe_kdd19_poster.pdf" target=&ldquo;blank&rdquo;>poster</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
-<div class="abstract">Algorithm selection and hyperparameter tuning remain two of the most challenging tasks in machine learning. Automated machine learning (AutoML) seeks to automate these tasks to enable widespread use of machine learning by non-experts. This paper introduces OBOE, a collaborative filtering method for time-constrained model selection and hyperparameter tuning. OBOE forms a matrix of the cross-validated errors of a large number of supervised learning models (algorithms together with hyperparameters) on a large number of datasets, and fits a low rank model to learn the low-dimensional feature vectors for the models and datasets that best predict the cross-validated errors. To find promising models for a new dataset, OBOE runs a set of fast but informative algorithms on the new dataset and uses their cross-validated errors to infer the feature vector for the new dataset. OBOE can find good models under constraints on the number of models fit or the total time budget. To this end, this paper develops a new heuristic for active learning in time-constrained matrix completion based on optimal experiment design. Our experiments demonstrate that OBOE delivers state-of-the-art performance faster than competing approaches on a test bed of supervised learning problems. Moreover, the success of the bilinear model used by OBOE suggests that AutoML may be simpler than was previously understood.</div>
-<div class="bib">
-@inproceedings{yang2019oboe,<br />
-  title={{OBOE}: Collaborative Filtering for {AutoML} Model Selection},<br />
-  author={Yang, Chengrun and Akimoto, Yuji and Kim, Dae Won and Udell, Madeleine},<br />
-  booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},<br />
-  pages={1173--1183},<br />
-  year={2019}<br />
-}
-</div>
-</p>
-</li>
-</ul>
-<h3>Preprints</h3>
-<ul>
-<li><p><b>SETS: Leveraging Self-Verification and Self-Correction for Improved Test-Time Scaling</b> <br />
-Jiefeng Chen, Jie Ren, Xinyun Chen, Chengrun Yang, Ruoxi Sun, Sercan Ö Arık <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/abs/2501.19306" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>] <br /> 
-<div class="abstract">Recent advancements in Large Language Models (LLMs) have created new opportunities to enhance performance on complex reasoning tasks by leveraging test-time computation. However, conventional approaches such as repeated sampling with majority voting or reward model scoring, often face diminishing returns as test-time compute scales, in addition to requiring costly task-specific reward model training. In this paper, we present Self-Enhanced Test-Time Scaling (SETS), a novel method that leverages the self-verification and self-correction capabilities of recent advanced LLMs to overcome these limitations. SETS integrates sampling, self-verification, and self-correction into a unified framework, enabling efficient and scalable test-time computation for improved capabilities at complex tasks. Through extensive experiments on challenging planning and reasoning benchmarks, compared to the alternatives, we demonstrate that SETS achieves significant performance improvements and more favorable test-time scaling laws.</div>
-<div class="bib">
-@article{chen2025sets, <br />
-  title={SETS: Leveraging Self-Verification and Self-Correction for Improved Test-Time Scaling}, <br />
-  author={Chen, Jiefeng and Ren, Jie and Chen, Xinyun and Yang, Chengrun and Sun, Ruoxi and Ar{\i}k, Sercan {\"O}}, <br />
-  journal={arXiv preprint arXiv:2501.19306}, <br />
-  year={2025} <br />
-}
-</div>
-</li>
-</ul>
-<ul>
-<li><p><b>Dr Genre: Reinforcement Learning from Decoupled LLM Feedback for Generic Text Rewriting</b> <br />
-Yufei Li, John Nham, Ganesh Jawahar, Lei Shu, David Uthus, Yun-Hsuan Sung, Chengrun Yang, Itai Rolnick, Yi Qiao, Cong Liu <br />
-[<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a href="https://arxiv.org/pdf/2503.06781" target=&ldquo;blank&rdquo;>arXiv</a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>] <br /> 
-<div class="abstract">Generic text rewriting is a prevalent large language model (LLM) application that covers diverse real-world tasks, such as style transfer, fact correction, and email editing. These tasks vary in rewriting objectives (e.g., factual consistency vs. semantic preservation), making it challenging to develop a unified model that excels across all dimensions. Existing methods often specialize in either a single task or a specific objective, limiting their generalizability. In this work, we introduce a generic model proficient in factuality, stylistic, and conversational rewriting tasks. To simulate real-world user rewrite requests, we construct a conversational rewrite dataset, ChatRewrite, that presents ``natural''-sounding instructions, from raw emails using LLMs. Combined with other popular rewrite datasets, including LongFact for the factuality rewrite task and RewriteLM for the stylistic rewrite task, this forms a broad benchmark for training and evaluating generic rewrite models. To align with task-specific objectives, we propose Dr Genre, a Decoupled-reward learning framework for Generic rewriting, that utilizes objective-oriented reward models with a task-specific weighting. Evaluation shows that \approach delivers higher-quality rewrites across all targeted tasks, improving objectives including instruction following (agreement), internal consistency (coherence), and minimal unnecessary edits (conciseness).</div>
-<div class="bib">
-@article{li2025dr, <br />
-  title={Dr Genre: Reinforcement Learning from Decoupled LLM Feedback for Generic Text Rewriting}, <br />
-  author={Li, Yufei and Nham, John and Jawahar, Ganesh and Shu, Lei and Uthus, David and Sung, Yun-Hsuan and Yang, Chengrun and Rolnick, Itai and Qiao, Yi and Liu, Cong}, <br />
-  journal={arXiv preprint arXiv:2503.06781}, <br />
-  year={2025} <br />
-}
-</div>
-</li>
-</ul>
-<h2>Reviewing</h2>
-<ul>
-<li><p>Conferences: NeurIPS, ICML, ICLR, AISTATS, NeurIPS 2018 workshop on AI in Financial Services<br /></p>
-<li><p>Journals: Transactions on Machine Learning Research (TMLR), TPAMI Special Issue on AutoML<br /></p>
-</ul>
+    <ul>
+      <li>
+        <p><b>Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization for Low-Rank Tensor Completion and Tensor
+            Robust Principal Component Analysis</b> <br />
+          <a href="https://jicongfan.github.io/" target="_blank"> Jicong Fan</a>, <a href="https://www.lijunding.net/"
+            target="_blank"> Lijun
+            Ding</a>, Chengrun Yang, Zhao Zhang, <a href="https://people.orie.cornell.edu/mru8/" target="_blank">
+            Madeleine
+            Udell</a> <br />
+          Transactions on Machine Learning Research (TMLR), 2023 <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/abs/2012.03436" target="_blank">arXiv</a>] [<a href="javascript:void(0)"
+            onclick="toggle_bib(this)">bib</a>] <br />
+        <div class="abstract">The nuclear norm and Schatten-p quasi-norm are popular rank proxies in low-rank matrix
+          recovery. However, computing the nuclear norm or Schatten- quasi-norm of a tensor is hard in both theory and
+          practice, hindering their application to low-rank tensor completion (LRTC) and tensor robust principal
+          component analysis (TRPCA). In this paper, we propose a new class of tensor rank regularizers based on the
+          Euclidean norms of the CP component vectors of a tensor and show that these regularizers are monotonic
+          transformations of tensor Schatten-p quasi-norm. This connection enables us to minimize the Schatten-p
+          quasi-norm in LRTC and TRPCA implicitly via the component vectors. The method scales to big tensors and
+          provides an arbitrarily sharper rank proxy for low-rank tensor recovery compared to the nuclear norm. On the
+          other hand, we study the generalization abilities of LRTC with the Schatten-p quasi-norm regularizer and LRTC
+          with the proposed regularizers. The theorems show that a relatively sharper regularizer leads to a tighter
+          error bound, which is consistent with our numerical results. Particularly, we prove that for LRTC with
+          Schatten-p quasi-norm regularizer on d-order tensors, p=1/d is always better than any p>1/d in terms of the
+          generalization ability. We also provide a recovery error bound to verify the usefulness of small p in the
+          Schatten-p quasi-norm for TRPCA. Numerical results on synthetic data and real data demonstrate the
+          effectiveness of the regularization methods and theorems.</div>
+        <div class="bib">
+          @article{fan2022euclidean,<br />
+          title={Euclidean-Norm-Induced Schatten-p Quasi-Norm Regularization for Low-Rank Tensor Completion and Tensor
+          Robust Principal Component Analysis},<br />
+          author={Fan, Jicong and Ding, Lijun and Yang, Chengrun and Zhang, Zhao and Udell, Madeleine},<br />
+          journal={Transactions on Machine Learning Research},<br />
+          year={2022}<br />
+          }
+        </div>
+        </p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><b> TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets</b> <br />
+          Chengrun Yang, Gabriel Bender, <a href="https://quark0.github.io/" target="_blank"> Hanxiao
+            Liu</a>, Pieter-Jan Kindermans, <a href="https://people.orie.cornell.edu/mru8/" target="_blank">
+            Madeleine Udell</a>, Yifeng Lu, <a href="https://cs.stanford.edu/~quocle/" target="_blank"> Quoc
+            V. Le</a>, Da Huang <br />
+          Neural Information Processing Systems (NeurIPS), 2022 <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/abs/2204.07615" target="_blank">arXiv</a>] [<a
+            href="https://github.com/google-research/tabnas" target="_blank">code</a>] [<a
+            href="posters/tabnas_neurips22_poster.pdf" target="_blank">poster</a>] [<a href="javascript:void(0)"
+            onclick="toggle_bib(this)">bib</a>]<br />
+        <div class="abstract">The best neural architecture for a given machine learning problem depends on many factors:
+          not only the complexity and structure of the dataset, but also on resource constraints including latency,
+          compute, energy consumption, etc. Neural architecture search (NAS) for tabular datasets is an important but
+          under-explored problem. Previous NAS algorithms designed for image search spaces incorporate resource
+          constraints directly into the reinforcement learning (RL) rewards. However, for NAS on tabular datasets, this
+          protocol often discovers suboptimal architectures. This paper develops TabNAS, a new and more effective
+          approach to handle resource constraints in tabular NAS using an RL controller motivated by the idea of
+          rejection sampling. TabNAS immediately discards any architecture that violates the resource constraints
+          without training or learning from that architecture. TabNAS uses a Monte-Carlo-based correction to the RL
+          policy gradient update to account for this extra filtering step. Results on several tabular datasets
+          demonstrate the superiority of TabNAS over previous reward-shaping methods: it finds better models that obey
+          the constraints.</div>
+        <div class="bib">
+          @article{yang2022tabnas,<br />
+          title={TabNAS: Rejection Sampling for Neural Architecture Search on Tabular Datasets},<br />
+          author={Yang, Chengrun and Bender, Gabriel and Liu, Hanxiao and Kindermans, Pieter-Jan and Udell, Madeleine
+          and Lu, Yifeng and Le, Quoc and Huang, Da},<br />
+          booktitle={Advances in Neural Information Processing Systems},<br />
+          year={2022}<br />
+          }
+        </div>
+        </p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><b>How Low Can We Go: Trading Memory for Error in Low-Precision Training</b> <br />
+          Chengrun Yang*, Ziyang Wu*, <a href="https://jerry-chee.github.io/" target="_blank"> Jerry
+            Chee</a>, <a href="https://www.cs.cornell.edu/~cdesa/" target="_blank"> Christopher De Sa</a>, <a
+            href="https://people.orie.cornell.edu/mru8/" target="_blank"> Madeleine
+            Udell</a><br />
+          International Conference on Learning Representations (ICLR), 2022 <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/abs/2106.09686" target="_blank">arXiv</a>] [<a
+            href="https://github.com/chengrunyang/peppp" target="_blank">code</a>] [<a
+            href="posters/peppp_iclr22_poster.pdf" target="_blank">poster</a>] [<a href="javascript:void(0)"
+            onclick="toggle_bib(this)">bib</a>]<br />
+        <div class="abstract"> Low-precision arithmetic trains deep learning models using less energy, less
+          memory and less time. However, we pay a price for the savings: lower precision
+          may yield larger round-off error and hence larger prediction error. As
+          applications proliferate, users must choose which precision to use to train a
+          new model, and chip manufacturers must decide which precisions to manufacture.
+          We view these precision choices as a hyperparameter tuning problem, and borrow
+          ideas from meta-learning to learn the tradeoff between memory and error. In
+          this paper, we introduce Pareto Estimation to Pick the Perfect Precision
+          (PEPPP). We use matrix factorization to find non-dominated configurations (the
+          Pareto frontier) with a limited number of network evaluations. For any given
+          memory budget, the precision that minimizes error is a point on this frontier.
+          Practitioners can use the frontier to trade memory for error and choose the
+          best precision for their goals.</div>
+        <div class="bib">
+          @inproceedings{yang2022how,<br />
+          title={How Low Can We Go: Trading Memory for Error in Low-Precision Training},<br />
+          author={Chengrun Yang and Ziyang Wu and Jerry Chee and Christopher De Sa and Madeleine Udell},<br />
+          booktitle={International Conference on Learning Representations},<br />
+          year={2022},<br />
+          url={https://openreview.net/forum?id=YpSxqy_RE84}<br />
+          }
+        </div>
+        </p>
+        *Equal contribution</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><b>Robust Non-Linear Matrix Factorization for Dictionary Learning, Denoising, and Clustering</b> <br />
+          <a href="https://jicongfan.github.io/" target="_blank"> Jicong Fan</a>, Chengrun Yang, <a
+            href="https://people.orie.cornell.edu/mru8/" target="_blank"> Madeleine
+            Udell</a> <br />
+          IEEE Transactions on Signal Processing (TSP), 2021 <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/abs/2005.01317" target="_blank">arXiv</a>] [<a
+            href="https://ieeexplore.ieee.org/document/9366807" target="_blank">IEEE</a>] [<a href="javascript:void(0)"
+            onclick="toggle_bib(this)">bib</a>]<br />
+        <div class="abstract">Low dimensional nonlinear structure abounds in datasets across computer vision and machine
+          learning. Kernelized matrix factorization techniques have recently been proposed to learn these nonlinear
+          structures for denoising, classification, dictionary learning, and missing data imputation, by observing that
+          the image of the matrix in a sufficiently large feature space is low-rank. However, these nonlinear methods
+          fail in the presence of sparse noise or outliers. In this work, we propose a new robust nonlinear
+          factorization method called Robust Non-Linear Matrix Factorization (RNLMF). RNLMF constructs a dictionary for
+          the data space by factoring a kernelized feature space; a noisy matrix can then be decomposed as the sum of a
+          sparse noise matrix and a clean data matrix that lies in a low dimensional nonlinear manifold. RNLMF is robust
+          to sparse noise and outliers and scales to matrices with thousands of rows and columns. Empirically, RNLMF
+          achieves noticeable improvements over baseline methods in denoising and clustering.</div>
+        <div class="bib">
+          @article{fan2020robust,<br />
+          author={Fan, Jicong and Yang, Chengrun and Udell, Madeleine},<br />
+          journal={IEEE Transactions on Signal Processing},<br />
+          title={Robust Non-Linear Matrix Factorization for Dictionary Learning, Denoising, and Clustering},<br />
+          year={2021},<br />
+          volume={69},<br />
+          number={},<br />
+          pages={1755-1770},<br />
+          doi={10.1109/TSP.2021.3062988}<br />
+          }
+        </div>
+        </p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><b>TenIPS: Inverse Propensity Sampling for Tensor Completion</b> <br />
+          Chengrun Yang, <a href="https://www.lijunding.net/" target="_blank"> Lijun
+            Ding</a>, Ziyang Wu, <a href="https://people.orie.cornell.edu/mru8/" target="_blank"> Madeleine
+            Udell</a> <br />
+          International Conference on Artificial Intelligence and Statistics (AISTATS), 2021 <br />
+          Preliminary version at NeurIPS 2020 Workshop on Optimization for Machine Learning <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/abs/2101.00323" target="_blank">arXiv</a>] [<a
+            href="https://github.com/udellgroup/tenips" target="_blank">code</a>] [<a
+            href="posters/tenips_aistats21_poster.pdf" target="_blank">poster</a>] [<a href="javascript:void(0)"
+            onclick="toggle_bib(this)">bib</a>]<br />
+        <div class="abstract">Tensors are widely used to represent multiway arrays of data. The recovery of missing
+          entries in a tensor has been extensively studied, generally under the assumption that entries are missing
+          completely at random (MCAR). However, in most practical settings, observations are missing not at random
+          (MNAR): the probability that a given entry is observed (also called the propensity) may depend on other
+          entries in the tensor or even on the value of the missing entry. In this paper, we study the problem of
+          completing a partially observed tensor with MNAR observations, without prior information about the
+          propensities. To complete the tensor, we assume that both the original tensor and the tensor of propensities
+          have low multilinear rank. The algorithm first estimates the propensities using a convex relaxation and then
+          predicts missing values using a higher-order SVD approach, reweighting the observed tensor by the inverse
+          propensities. We provide finite-sample error bounds on the resulting complete tensor. Numerical experiments
+          demonstrate the effectiveness of our approach.</div>
+        <div class="bib">
+          @inproceedings{yang2021tenips,<br />
+          title={TenIPS: Inverse Propensity Sampling for Tensor Completion},<br />
+          author={Chengrun Yang and Lijun Ding and Ziyang Wu and Madeleine Udell},<br />
+          year={2021},<br />
+          eprint={2101.00323},<br />
+          archivePrefix={arXiv},<br />
+          primaryClass={stat.ML},<br />
+          booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},<br />
+          }
+        </div>
+        </p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><b>AutoML Pipeline Selection: Efficiently Navigating the Combinatorial Space</b> <br />
+          Chengrun Yang, <a href="https://jicongfan.github.io/" target="_blank"> Jicong Fan</a>, Ziyang Wu,
+          <a href="https://people.orie.cornell.edu/mru8/" target="_blank"> Madeleine
+            Udell </a> <br />
+          ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2020 <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://people.ece.cornell.edu/cy/_papers/tensor_oboe.pdf" target="_blank">pdf</a>] [<a
+            href="https://github.com/udellgroup/oboe" target="_blank">code</a>] [<a
+            href="https://dl.acm.org/doi/abs/10.1145/3394486.3403197" target="_blank">ACM</a>] [<a
+            href="https://people.ece.cornell.edu/cy/_papers/tensor_oboe_ACM_version_errata.pdf" target="_blank"><b>ACM
+              version errata</b></a>] [<a href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
+        <div class="abstract">Data scientists seeking a good supervised learning model on a dataset have many choices to
+          make: they must preprocess the data, select features, possibly reduce the dimension, select an estimation
+          algorithm, and choose hyperparameters for each of these pipeline components. With new pipeline components
+          comes a combinatorial explosion in the number of choices! In this work, we design a new AutoML system
+          TensorOboe to address this challenge: an automated system to design a supervised learning pipeline. TensorOboe
+          uses low rank tensor decomposition as a surrogate model for efficient pipeline search. We also develop a new
+          greedy experiment design protocol to gather information about a new dataset efficiently. Experiments on large
+          corpora of real-world classification problems demonstrate the effectiveness of our approach.</div>
+        <div class="bib">
+          @inproceedings{yang2020automl,<br />
+          title={{AutoML} Pipeline Selection: Efficiently Navigating the Combinatorial Space},<br />
+          author={Yang, Chengrun and Fan, Jicong and Wu, Ziyang and Udell, Madeleine},<br />
+          booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data
+          Mining},<br />
+          pages={1446--1456},<br />
+          year={2020}<br />
+          }
+        </div>
+        </p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><b>Spectral Frank-Wolfe Algorithm: Strict Complementarity and Linear Convergence</b> <br />
+          <a href="https://www.lijunding.net/" target="_blank"> Lijun
+            Ding</a>, <a href="https://people.orie.cornell.edu/yf275/" target="_blank"> Yingjie
+            Fei</a>, Qiantong Xu, Chengrun Yang <br />
+          International Conference on Machine Learning (ICML), 2020 <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/abs/2006.01719" target="_blank">arXiv</a>] [<a
+            href="http://proceedings.mlr.press/v119/ding20a.html" target="_blank">PMLR</a>] [<a
+            href="javascript:void(0)" onclick="toggle_bib(this)">bib</a>]<br />
+        <div class="abstract">We develop a novel variant of the classical Frank-Wolfe algorithm, which we call spectral
+          Frank-Wolfe, for convex optimization over a spectrahedron. The spectral Frank-Wolfe algorithm has a novel
+          ingredient: it computes a few eigenvectors of the gradient and solves a small-scale SDP in each iteration.
+          Such procedure overcomes slow convergence of the classical Frank-Wolfe algorithm due to ignoring eigenvalue
+          coalescence. We demonstrate that strict complementarity of the optimization problem is key to proving linear
+          convergence of various algorithms, such as the spectral Frank-Wolfe algorithm as well as the projected
+          gradient method and its accelerated version.</div>
+        <div class="bib">
+          @inproceedings{ding2020spectral,<br />
+          title={Spectral Frank-Wolfe Algorithm: Strict Complementarity and Linear Convergence},<br />
+          author={Ding, Lijun and Fei, Yingjie and Xu, Qiantong and Yang, Chengrun},<br />
+          booktitle={International Conference on Machine Learning},<br />
+          pages={2535--2544},<br />
+          year={2020},<br />
+          organization={PMLR}<br />
+          }
+        </div>
+        </p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><b> OBOE: Collaborative Filtering for AutoML Model Selection</b> <br />
+          Chengrun Yang, Yuji Akimoto, Dae Won Kim, <a href="https://people.orie.cornell.edu/mru8/" target="_blank">
+            Madeleine
+            Udell</a> <br />
+          ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2019 <br />
+          Oral Presentation <br />
+          Preliminary version at NeurIPS 2018 Workshop on Meta-Learning <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/abs/1808.03233" target="_blank">arXiv</a>] [<a
+            href="https://people.ece.cornell.edu/cy/_papers/oboe.pdf" target="_blank">pdf</a>] [<a
+            href="https://github.com/udellgroup/oboe" target="_blank">code</a>] [<a
+            href="https://dl.acm.org/doi/10.1145/3292500.3330909" target="_blank">ACM</a>] [<a
+            href="posters/oboe_kdd19_poster.pdf" target="_blank">poster</a>] [<a href="javascript:void(0)"
+            onclick="toggle_bib(this)">bib</a>]<br />
+        <div class="abstract">Algorithm selection and hyperparameter tuning remain two of the most challenging tasks in
+          machine learning. Automated machine learning (AutoML) seeks to automate these tasks to enable widespread use
+          of machine learning by non-experts. This paper introduces OBOE, a collaborative filtering method for
+          time-constrained model selection and hyperparameter tuning. OBOE forms a matrix of the cross-validated errors
+          of a large number of supervised learning models (algorithms together with hyperparameters) on a large number
+          of datasets, and fits a low rank model to learn the low-dimensional feature vectors for the models and
+          datasets that best predict the cross-validated errors. To find promising models for a new dataset, OBOE runs a
+          set of fast but informative algorithms on the new dataset and uses their cross-validated errors to infer the
+          feature vector for the new dataset. OBOE can find good models under constraints on the number of models fit or
+          the total time budget. To this end, this paper develops a new heuristic for active learning in
+          time-constrained matrix completion based on optimal experiment design. Our experiments demonstrate that OBOE
+          delivers state-of-the-art performance faster than competing approaches on a test bed of supervised learning
+          problems. Moreover, the success of the bilinear model used by OBOE suggests that AutoML may be simpler than
+          was previously understood.</div>
+        <div class="bib">
+          @inproceedings{yang2019oboe,<br />
+          title={{OBOE}: Collaborative Filtering for {AutoML} Model Selection},<br />
+          author={Yang, Chengrun and Akimoto, Yuji and Kim, Dae Won and Udell, Madeleine},<br />
+          booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data
+          Mining},<br />
+          pages={1173--1183},<br />
+          year={2019}<br />
+          }
+        </div>
+        </p>
+      </li>
+    </ul>
+    <h3>Preprints</h3>
+    <ul>
+      <li>
+        <p><b>SETS: Leveraging Self-Verification and Self-Correction for Improved Test-Time Scaling</b> <br />
+          Jiefeng Chen, Jie Ren, Xinyun Chen, Chengrun Yang, Ruoxi Sun, Sercan Ö Arık <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/abs/2501.19306" target="_blank">arXiv</a>] [<a href="javascript:void(0)"
+            onclick="toggle_bib(this)">bib</a>] <br />
+        <div class="abstract">Recent advancements in Large Language Models (LLMs) have created new opportunities to
+          enhance performance on complex reasoning tasks by leveraging test-time computation. However, conventional
+          approaches such as repeated sampling with majority voting or reward model scoring, often face diminishing
+          returns as test-time compute scales, in addition to requiring costly task-specific reward model training. In
+          this paper, we present Self-Enhanced Test-Time Scaling (SETS), a novel method that leverages the
+          self-verification and self-correction capabilities of recent advanced LLMs to overcome these limitations. SETS
+          integrates sampling, self-verification, and self-correction into a unified framework, enabling efficient and
+          scalable test-time computation for improved capabilities at complex tasks. Through extensive experiments on
+          challenging planning and reasoning benchmarks, compared to the alternatives, we demonstrate that SETS achieves
+          significant performance improvements and more favorable test-time scaling laws.</div>
+        <div class="bib">
+          @article{chen2025sets, <br />
+          title={SETS: Leveraging Self-Verification and Self-Correction for Improved Test-Time Scaling}, <br />
+          author={Chen, Jiefeng and Ren, Jie and Chen, Xinyun and Yang, Chengrun and Sun, Ruoxi and Ar{\i}k, Sercan
+          {\"O}}, <br />
+          journal={arXiv preprint arXiv:2501.19306}, <br />
+          year={2025} <br />
+          }
+        </div>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p><b>Dr Genre: Reinforcement Learning from Decoupled LLM Feedback for Generic Text Rewriting</b> <br />
+          Yufei Li, John Nham, Ganesh Jawahar, Lei Shu, David Uthus, Yun-Hsuan Sung, Chengrun Yang, Itai Rolnick, Yi
+          Qiao, Cong Liu <br />
+          [<a href="javascript:void(0)" onclick="toggle_abstract(this)">abstract</a>] [<a
+            href="https://arxiv.org/pdf/2503.06781" target="_blank">arXiv</a>] [<a href="javascript:void(0)"
+            onclick="toggle_bib(this)">bib</a>] <br />
+        <div class="abstract">Generic text rewriting is a prevalent large language model (LLM) application that covers
+          diverse real-world tasks, such as style transfer, fact correction, and email editing. These tasks vary in
+          rewriting objectives (e.g., factual consistency vs. semantic preservation), making it challenging to develop a
+          unified model that excels across all dimensions. Existing methods often specialize in either a single task or
+          a specific objective, limiting their generalizability. In this work, we introduce a generic model proficient
+          in factuality, stylistic, and conversational rewriting tasks. To simulate real-world user rewrite requests, we
+          construct a conversational rewrite dataset, ChatRewrite, that presents ``natural''-sounding instructions, from
+          raw emails using LLMs. Combined with other popular rewrite datasets, including LongFact for the factuality
+          rewrite task and RewriteLM for the stylistic rewrite task, this forms a broad benchmark for training and
+          evaluating generic rewrite models. To align with task-specific objectives, we propose Dr Genre, a
+          Decoupled-reward learning framework for Generic rewriting, that utilizes objective-oriented reward models with
+          a task-specific weighting. Evaluation shows that \approach delivers higher-quality rewrites across all
+          targeted tasks, improving objectives including instruction following (agreement), internal consistency
+          (coherence), and minimal unnecessary edits (conciseness).</div>
+        <div class="bib">
+          @article{li2025dr, <br />
+          title={Dr Genre: Reinforcement Learning from Decoupled LLM Feedback for Generic Text Rewriting}, <br />
+          author={Li, Yufei and Nham, John and Jawahar, Ganesh and Shu, Lei and Uthus, David and Sung, Yun-Hsuan and
+          Yang, Chengrun and Rolnick, Itai and Qiao, Yi and Liu, Cong}, <br />
+          journal={arXiv preprint arXiv:2503.06781}, <br />
+          year={2025} <br />
+          }
+        </div>
+      </li>
+    </ul>
+    <h2>Reviewing</h2>
+    <ul>
+      <li>
+        <p>Conferences: NeurIPS, ICML, ICLR, AISTATS, NeurIPS 2018 workshop on AI in Financial Services<br /></p>
+      <li>
+        <p>Journals: Transactions on Machine Learning Research (TMLR), TPAMI Special Issue on AutoML<br /></p>
+    </ul>
 
-<h2>Teaching (at Cornell)</h2>
-<ul>
-<li><p><a href="https://people.orie.cornell.edu/mru8/orie4741/" target=&ldquo;blank&rdquo;>ORIE 4741</a> (Fall 2017, Fall 2019, Fall 2020): Learning with Big Messy Data (Teaching Assistant)<br /></p>
-</li>
-<li><p>ECE 4250 (Spring 2017): Digital Signal and Image Processing (Teaching Assistant)<br /></p>
-</li>
-</ul>
-<div id="footer">
-<div id="footer-text">
-Page generated 2025-05-18, thanks to <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a> and a template from <a href="https://www.cs.cornell.edu/~cdesa/" target="blank">Chris De Sa</a>.
-</div>
-</div>
-</div>
+    <h2>Teaching (at Cornell)</h2>
+    <ul>
+      <li>
+        <p><a href="https://people.orie.cornell.edu/mru8/orie4741/" target="_blank">ORIE 4741</a> (Fall 2017,
+          Fall 2019, Fall 2020): Learning with Big Messy Data (Teaching Assistant)<br /></p>
+      </li>
+      <li>
+        <p>ECE 4250 (Spring 2017): Digital Signal and Image Processing (Teaching Assistant)<br /></p>
+      </li>
+    </ul>
+    <div id="footer">
+      <div id="footer-text">
+        Page generated 2026-08-01, thanks to <a href="https://github.com/wsshin/jemdoc_mathjax"
+          target="_blank">jemdoc+MathJax</a> and a template from <a href="https://www.cs.cornell.edu/~cdesa/"
+          target="_blank">Chris De Sa</a>.
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
